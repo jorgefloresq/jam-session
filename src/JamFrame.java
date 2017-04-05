@@ -59,7 +59,6 @@ public class JamFrame extends javax.swing.JFrame {
         cmbChord3 = new javax.swing.JComboBox<>();
         cmbChord4 = new javax.swing.JComboBox<>();
         cmbChord5 = new javax.swing.JComboBox<>();
-        jScrollPane2 = new javax.swing.JScrollPane();
         jPanel2 = new javax.swing.JPanel();
         rbDrums = new javax.swing.JRadioButton();
         rbBass = new javax.swing.JRadioButton();
@@ -218,8 +217,6 @@ public class JamFrame extends javax.swing.JFrame {
                 .addContainerGap(31, Short.MAX_VALUE))
         );
 
-        jScrollPane2.setViewportView(jPanel2);
-
         jLabel2.setText("Instrument");
 
         jLabel3.setText("Style");
@@ -265,7 +262,7 @@ public class JamFrame extends javax.swing.JFrame {
                                         .addComponent(jLabel2)
                                         .addGap(120, 120, 120)
                                         .addComponent(jLabel3))
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 399, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(btn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -298,8 +295,8 @@ public class JamFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
                             .addComponent(jLabel3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(btn1)
@@ -310,8 +307,9 @@ public class JamFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btn4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn5)))
-                .addContainerGap(20, Short.MAX_VALUE))
+                        .addComponent(btn5)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
         pack();
@@ -425,6 +423,14 @@ public class JamFrame extends javax.swing.JFrame {
      
     }//GEN-LAST:event_btn5ActionPerformed
 
+    private void cmbbxDrumsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbbxDrumsActionPerformed
+
+    }//GEN-LAST:event_cmbbxDrumsActionPerformed
+
+    private void cmbbxDrumsItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cmbbxDrumsItemStateChanged
+
+    }//GEN-LAST:event_cmbbxDrumsItemStateChanged
+
     private void rbKeysStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_rbKeysStateChanged
         refreshSequence();
     }//GEN-LAST:event_rbKeysStateChanged
@@ -436,15 +442,6 @@ public class JamFrame extends javax.swing.JFrame {
     private void rbBassStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_rbBassStateChanged
         refreshSequence();
     }//GEN-LAST:event_rbBassStateChanged
-
-    private void cmbbxDrumsItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cmbbxDrumsItemStateChanged
-        
-        
-    }//GEN-LAST:event_cmbbxDrumsItemStateChanged
-
-    private void cmbbxDrumsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbbxDrumsActionPerformed
-
-    }//GEN-LAST:event_cmbbxDrumsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -517,7 +514,6 @@ public class JamFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JRadioButton rbBass;
     private javax.swing.JRadioButton rbDrums;
     private javax.swing.JRadioButton rbGuitar;
