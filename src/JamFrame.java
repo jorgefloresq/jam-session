@@ -93,7 +93,7 @@ public class JamFrame extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel1.setText("JAM");
+        jLabel1.setText("Jam Session");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Chords"));
 
