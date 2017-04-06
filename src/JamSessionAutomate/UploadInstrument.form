@@ -320,41 +320,65 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="C Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnCsmaj">
           <Properties>
             <Property name="text" type="java.lang.String" value="C# Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCsmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnDmaj">
           <Properties>
             <Property name="text" type="java.lang.String" value="D Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnDsmaj">
           <Properties>
             <Property name="text" type="java.lang.String" value="D# Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDsmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnEmaj">
           <Properties>
             <Property name="text" type="java.lang.String" value="E Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnFmaj">
           <Properties>
             <Property name="text" type="java.lang.String" value="F Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnFsmaj">
           <Properties>
             <Property name="text" type="java.lang.String" value="F# Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFsmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnGmaj">
           <Properties>
             <Property name="text" type="java.lang.String" value="G Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblCmaj">
           <Properties>
@@ -365,6 +389,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="G# Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGsmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblCsmaj">
           <Properties>
@@ -375,6 +402,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="A Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblDmaj">
           <Properties>
@@ -385,6 +415,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="A# Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAsmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblDsmaj">
           <Properties>
@@ -435,11 +468,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="B Major"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBmajActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnCmin">
           <Properties>
             <Property name="text" type="java.lang.String" value="C Minor"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCminActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblCmin">
           <Properties>
@@ -450,6 +489,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="C# Minor"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCsminActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblCsmin">
           <Properties>
@@ -486,6 +528,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="E Minor"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEminActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblEmin">
           <Properties>
@@ -496,6 +541,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="F Minor"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFminActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblFmin">
           <Properties>
@@ -506,6 +554,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="F# Minor"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFsminActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblFsmin">
           <Properties>
@@ -516,6 +567,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="G Minor"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGminActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblGmin">
           <Properties>
@@ -526,6 +580,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="G# Minor"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGsminActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblGsmin">
           <Properties>
@@ -536,6 +593,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="A Minor"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAminActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblAmin">
           <Properties>
@@ -546,6 +606,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="A# Minor"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAsminActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblAsmin">
           <Properties>
@@ -556,6 +619,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="B Minor"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBminActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblBmin">
           <Properties>
