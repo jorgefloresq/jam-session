@@ -1,5 +1,8 @@
 package JamSessionAutomate;
 
+import javax.swing.JFileChooser;
+import javax.swing.*;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -95,32 +98,87 @@ public class UploadInstrument extends javax.swing.JFrame {
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
         btnCmaj.setText("C Major");
+        btnCmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCmajActionPerformed(evt);
+            }
+        });
 
         btnCsmaj.setText("C# Major");
+        btnCsmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCsmajActionPerformed(evt);
+            }
+        });
 
         btnDmaj.setText("D Major");
+        btnDmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDmajActionPerformed(evt);
+            }
+        });
 
         btnDsmaj.setText("D# Major");
+        btnDsmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDsmajActionPerformed(evt);
+            }
+        });
 
         btnEmaj.setText("E Major");
+        btnEmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEmajActionPerformed(evt);
+            }
+        });
 
         btnFmaj.setText("F Major");
+        btnFmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFmajActionPerformed(evt);
+            }
+        });
 
         btnFsmaj.setText("F# Major");
+        btnFsmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFsmajActionPerformed(evt);
+            }
+        });
 
         btnGmaj.setText("G Major");
+        btnGmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGmajActionPerformed(evt);
+            }
+        });
 
         lblCmaj.setText("No File Chosen.");
 
         btnGsmaj.setText("G# Major");
+        btnGsmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGsmajActionPerformed(evt);
+            }
+        });
 
         lblCsmaj.setText("No File Chosen.");
 
         btnAmaj.setText("A Major");
+        btnAmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAmajActionPerformed(evt);
+            }
+        });
 
         lblDmaj.setText("No File Chosen.");
 
         btnAsmaj.setText("A# Major");
+        btnAsmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAsmajActionPerformed(evt);
+            }
+        });
 
         lblDsmaj.setText("No File Chosen.");
 
@@ -141,12 +199,27 @@ public class UploadInstrument extends javax.swing.JFrame {
         lblBmaj.setText("No File Chosen.");
 
         btnBmaj.setText("B Major");
+        btnBmaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBmajActionPerformed(evt);
+            }
+        });
 
         btnCmin.setText("C Minor");
+        btnCmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCminActionPerformed(evt);
+            }
+        });
 
         lblCmin.setText("No File Chosen.");
 
         btnCsmin.setText("C# Minor");
+        btnCsmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCsminActionPerformed(evt);
+            }
+        });
 
         lblCsmin.setText("No File Chosen.");
 
@@ -169,34 +242,74 @@ public class UploadInstrument extends javax.swing.JFrame {
         lblDsmin.setText("No File Chosen.");
 
         btnEmin.setText("E Minor");
+        btnEmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEminActionPerformed(evt);
+            }
+        });
 
         lblEmin.setText("No File Chosen.");
 
         btnFmin.setText("F Minor");
+        btnFmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFminActionPerformed(evt);
+            }
+        });
 
         lblFmin.setText("No File Chosen.");
 
         btnFsmin.setText("F# Minor");
+        btnFsmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFsminActionPerformed(evt);
+            }
+        });
 
         lblFsmin.setText("No File Chosen.");
 
         btnGmin.setText("G Minor");
+        btnGmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGminActionPerformed(evt);
+            }
+        });
 
         lblGmin.setText("No File Chosen.");
 
         btnGsmin.setText("G# Minor");
+        btnGsmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGsminActionPerformed(evt);
+            }
+        });
 
         lblGsmin.setText("No File Chosen.");
 
         btnAmin.setText("A Minor");
+        btnAmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAminActionPerformed(evt);
+            }
+        });
 
         lblAmin.setText("No File Chosen.");
 
         btnAsmin.setText("A# Minor");
+        btnAsmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAsminActionPerformed(evt);
+            }
+        });
 
         lblAsmin.setText("No File Chosen.");
 
         btnBmin.setText("B Minor");
+        btnBmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBminActionPerformed(evt);
+            }
+        });
 
         lblBmin.setText("No File Chosen.");
 
@@ -425,12 +538,100 @@ public class UploadInstrument extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDsminActionPerformed
-        // TODO add your handling code here:
+        openFile(lblDsmin);
     }//GEN-LAST:event_btnDsminActionPerformed
 
     private void btnDminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDminActionPerformed
-        // TODO add your handling code here:
+        openFile(lblDmin);
     }//GEN-LAST:event_btnDminActionPerformed
+
+    private void btnCmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCmajActionPerformed
+        openFile(lblCmaj);
+    }//GEN-LAST:event_btnCmajActionPerformed
+
+    private void btnCsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCsmajActionPerformed
+        openFile(lblCsmaj);
+    }//GEN-LAST:event_btnCsmajActionPerformed
+
+    private void btnDmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDmajActionPerformed
+        openFile(lblDmaj);
+    }//GEN-LAST:event_btnDmajActionPerformed
+
+    private void btnDsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDsmajActionPerformed
+        openFile(lblDsmaj);
+    }//GEN-LAST:event_btnDsmajActionPerformed
+
+    private void btnEmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmajActionPerformed
+        openFile(lblEmaj);
+    }//GEN-LAST:event_btnEmajActionPerformed
+
+    private void btnFmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFmajActionPerformed
+        openFile(lblFmaj);
+    }//GEN-LAST:event_btnFmajActionPerformed
+
+    private void btnFsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFsmajActionPerformed
+        openFile(lblFsmaj);
+    }//GEN-LAST:event_btnFsmajActionPerformed
+
+    private void btnGmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGmajActionPerformed
+        openFile(lblGmaj);
+    }//GEN-LAST:event_btnGmajActionPerformed
+
+    private void btnGsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGsmajActionPerformed
+        openFile(lblGsmaj);
+    }//GEN-LAST:event_btnGsmajActionPerformed
+
+    private void btnAmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAmajActionPerformed
+        openFile(lblAmaj);
+    }//GEN-LAST:event_btnAmajActionPerformed
+
+    private void btnAsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsmajActionPerformed
+        openFile(lblAsmaj);
+    }//GEN-LAST:event_btnAsmajActionPerformed
+
+    private void btnBmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBmajActionPerformed
+        openFile(lblCmaj);
+    }//GEN-LAST:event_btnBmajActionPerformed
+
+    private void btnCminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCminActionPerformed
+        openFile(lblCmin);
+    }//GEN-LAST:event_btnCminActionPerformed
+
+    private void btnCsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCsminActionPerformed
+        openFile(lblCsmin);
+    }//GEN-LAST:event_btnCsminActionPerformed
+
+    private void btnEminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEminActionPerformed
+        openFile(lblEmin);
+    }//GEN-LAST:event_btnEminActionPerformed
+
+    private void btnFminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFminActionPerformed
+        openFile(lblFmin);
+    }//GEN-LAST:event_btnFminActionPerformed
+
+    private void btnFsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFsminActionPerformed
+        openFile(lblFsmin);
+    }//GEN-LAST:event_btnFsminActionPerformed
+
+    private void btnGminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGminActionPerformed
+        openFile(lblGmin);
+    }//GEN-LAST:event_btnGminActionPerformed
+
+    private void btnGsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGsminActionPerformed
+        openFile(lblGsmin);
+    }//GEN-LAST:event_btnGsminActionPerformed
+
+    private void btnAminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAminActionPerformed
+        openFile(lblAmin);
+    }//GEN-LAST:event_btnAminActionPerformed
+
+    private void btnAsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsminActionPerformed
+        openFile(lblAsmin);
+    }//GEN-LAST:event_btnAsminActionPerformed
+
+    private void btnBminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBminActionPerformed
+        openFile(lblBmin);
+    }//GEN-LAST:event_btnBminActionPerformed
 
     /**
      * @param args the command line arguments
@@ -466,7 +667,15 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
     }
-
+    
+    private void openFile(JLabel lbl){
+        JButton open = new JButton();
+        JFileChooser jfc = new JFileChooser(); 
+        if(jfc.showOpenDialog(open) == JFileChooser.APPROVE_OPTION) { 
+             
+        }
+        System.out.println(jfc.getSelectedFile().getAbsolutePath());
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAmaj;
     private javax.swing.JButton btnAmin;
