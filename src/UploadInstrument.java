@@ -27,8 +27,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jTextField1 = new javax.swing.JTextField();
+        cmbbxInstrumentType = new javax.swing.JComboBox<>();
+        txtVariation = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         btnCmaj = new javax.swing.JButton();
         btnCsmaj = new javax.swing.JButton();
@@ -38,48 +38,49 @@ public class UploadInstrument extends javax.swing.JFrame {
         btnFmaj = new javax.swing.JButton();
         btnFsmaj = new javax.swing.JButton();
         btnGmaj = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        lblCmaj = new javax.swing.JLabel();
         btnGsmaj = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        lblCsmaj = new javax.swing.JLabel();
         btnAmaj = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        lblDmaj = new javax.swing.JLabel();
         btnAsmaj = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        lblDsmaj = new javax.swing.JLabel();
+        lblEmaj = new javax.swing.JLabel();
+        lblFmaj = new javax.swing.JLabel();
+        lblFsmaj = new javax.swing.JLabel();
+        lblGmaj = new javax.swing.JLabel();
+        lblGsmaj = new javax.swing.JLabel();
+        lblAmaj = new javax.swing.JLabel();
+        lblAsmaj = new javax.swing.JLabel();
+        lblBmaj = new javax.swing.JLabel();
         btnBmaj = new javax.swing.JButton();
         btnCmin = new javax.swing.JButton();
-        jLabel14 = new javax.swing.JLabel();
+        lblCmin = new javax.swing.JLabel();
         btnCsmin = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
+        lblCsmin = new javax.swing.JLabel();
         btnDmin = new javax.swing.JButton();
-        jLabel16 = new javax.swing.JLabel();
+        lblDmin = new javax.swing.JLabel();
         btnDsmin = new javax.swing.JButton();
-        jLabel17 = new javax.swing.JLabel();
+        lblDsmin = new javax.swing.JLabel();
         btnEmin = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
+        lblEmin = new javax.swing.JLabel();
         btnFmin = new javax.swing.JButton();
-        jLabel19 = new javax.swing.JLabel();
+        lblFmin = new javax.swing.JLabel();
         btnFsmin = new javax.swing.JButton();
-        jLabel20 = new javax.swing.JLabel();
+        lblFsmin = new javax.swing.JLabel();
         btnGmin = new javax.swing.JButton();
-        jLabel21 = new javax.swing.JLabel();
+        lblGmin = new javax.swing.JLabel();
         btnGsmin = new javax.swing.JButton();
-        jLabel22 = new javax.swing.JLabel();
+        lblGsmin = new javax.swing.JLabel();
         btnAmin = new javax.swing.JButton();
-        jLabel23 = new javax.swing.JLabel();
+        lblAmin = new javax.swing.JLabel();
         btnAsmin = new javax.swing.JButton();
-        jLabel24 = new javax.swing.JLabel();
-        btnBsmin = new javax.swing.JButton();
-        jLabel25 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
+        lblAsmin = new javax.swing.JLabel();
+        btnBmin = new javax.swing.JButton();
+        lblBmin = new javax.swing.JLabel();
+        btnSave = new javax.swing.JButton();
+        btnCancel = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -87,7 +88,7 @@ public class UploadInstrument extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Shonar Bangla", 1, 36)); // NOI18N
         jLabel1.setText("Upload Variation");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmbbxInstrumentType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bass", "Guitar", "Keys" }));
 
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
@@ -107,45 +108,45 @@ public class UploadInstrument extends javax.swing.JFrame {
 
         btnGmaj.setText("G Major");
 
-        jLabel2.setText("No File Chosen.");
+        lblCmaj.setText("No File Chosen.");
 
         btnGsmaj.setText("G# Major");
 
-        jLabel3.setText("No File Chosen.");
+        lblCsmaj.setText("No File Chosen.");
 
         btnAmaj.setText("A Major");
 
-        jLabel4.setText("No File Chosen.");
+        lblDmaj.setText("No File Chosen.");
 
         btnAsmaj.setText("A# Major");
 
-        jLabel5.setText("No File Chosen.");
+        lblDsmaj.setText("No File Chosen.");
 
-        jLabel6.setText("No File Chosen.");
+        lblEmaj.setText("No File Chosen.");
 
-        jLabel7.setText("No File Chosen.");
+        lblFmaj.setText("No File Chosen.");
 
-        jLabel8.setText("No File Chosen.");
+        lblFsmaj.setText("No File Chosen.");
 
-        jLabel9.setText("No File Chosen.");
+        lblGmaj.setText("No File Chosen.");
 
-        jLabel10.setText("No File Chosen.");
+        lblGsmaj.setText("No File Chosen.");
 
-        jLabel11.setText("No File Chosen.");
+        lblAmaj.setText("No File Chosen.");
 
-        jLabel12.setText("No File Chosen.");
+        lblAsmaj.setText("No File Chosen.");
 
-        jLabel13.setText("No File Chosen.");
+        lblBmaj.setText("No File Chosen.");
 
         btnBmaj.setText("B Major");
 
         btnCmin.setText("C Minor");
 
-        jLabel14.setText("No File Chosen.");
+        lblCmin.setText("No File Chosen.");
 
         btnCsmin.setText("C# Minor");
 
-        jLabel15.setText("No File Chosen.");
+        lblCsmin.setText("No File Chosen.");
 
         btnDmin.setText("D Minor");
         btnDmin.addActionListener(new java.awt.event.ActionListener() {
@@ -154,7 +155,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
-        jLabel16.setText("No File Chosen.");
+        lblDmin.setText("No File Chosen.");
 
         btnDsmin.setText("D# Minor");
         btnDsmin.addActionListener(new java.awt.event.ActionListener() {
@@ -163,39 +164,39 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
-        jLabel17.setText("No File Chosen.");
+        lblDsmin.setText("No File Chosen.");
 
         btnEmin.setText("E Minor");
 
-        jLabel18.setText("No File Chosen.");
+        lblEmin.setText("No File Chosen.");
 
         btnFmin.setText("F Minor");
 
-        jLabel19.setText("No File Chosen.");
+        lblFmin.setText("No File Chosen.");
 
         btnFsmin.setText("F# Minor");
 
-        jLabel20.setText("No File Chosen.");
+        lblFsmin.setText("No File Chosen.");
 
         btnGmin.setText("G Minor");
 
-        jLabel21.setText("No File Chosen.");
+        lblGmin.setText("No File Chosen.");
 
         btnGsmin.setText("G# Minor");
 
-        jLabel22.setText("No File Chosen.");
+        lblGsmin.setText("No File Chosen.");
 
         btnAmin.setText("A Minor");
 
-        jLabel23.setText("No File Chosen.");
+        lblAmin.setText("No File Chosen.");
 
         btnAsmin.setText("A# Minor");
 
-        jLabel24.setText("No File Chosen.");
+        lblAsmin.setText("No File Chosen.");
 
-        btnBsmin.setText("B Minor");
+        btnBmin.setText("B Minor");
 
-        jLabel25.setText("No File Chosen.");
+        lblBmin.setText("No File Chosen.");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -218,19 +219,19 @@ public class UploadInstrument extends javax.swing.JFrame {
                     .addComponent(btnBmaj, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                    .addComponent(lblBmaj)
+                    .addComponent(lblAsmaj)
+                    .addComponent(lblEmaj)
+                    .addComponent(lblFmaj)
+                    .addComponent(lblFsmaj)
+                    .addComponent(lblGmaj)
+                    .addComponent(lblGsmaj)
+                    .addComponent(lblAmaj)
+                    .addComponent(lblDsmaj)
+                    .addComponent(lblCsmaj)
+                    .addComponent(lblCmaj)
+                    .addComponent(lblDmaj))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(btnCsmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnDsmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -238,27 +239,26 @@ public class UploadInstrument extends javax.swing.JFrame {
                     .addComponent(btnCmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnDmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnEmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(btnGmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnFmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnFsmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnGmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnFmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnFsmin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnAsmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnAmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnBsmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnBmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel25)
-                    .addComponent(jLabel24)
-                    .addComponent(jLabel18)
-                    .addComponent(jLabel19)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel22)
-                    .addComponent(jLabel23)
-                    .addComponent(jLabel17)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel16))
+                    .addComponent(lblBmin)
+                    .addComponent(lblAsmin)
+                    .addComponent(lblEmin)
+                    .addComponent(lblFmin)
+                    .addComponent(lblFsmin)
+                    .addComponent(lblGmin)
+                    .addComponent(lblGsmin)
+                    .addComponent(lblAmin)
+                    .addComponent(lblDsmin)
+                    .addComponent(lblCsmin)
+                    .addComponent(lblCmin)
+                    .addComponent(lblDmin))
                 .addGap(35, 35, 35))
         );
         jPanel1Layout.setVerticalGroup(
@@ -269,128 +269,135 @@ public class UploadInstrument extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnCmin)
-                            .addComponent(jLabel14))
+                            .addComponent(lblCmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnCsmin)
-                            .addComponent(jLabel15))
+                            .addComponent(lblCsmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnDmin)
-                            .addComponent(jLabel16))
+                            .addComponent(lblDmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel17)
+                            .addComponent(lblDsmin)
                             .addComponent(btnDsmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnEmin)
-                            .addComponent(jLabel18))
+                            .addComponent(lblEmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnFmin)
-                            .addComponent(jLabel19))
+                            .addComponent(lblFmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnFsmin)
-                            .addComponent(jLabel20))
+                            .addComponent(lblFsmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnGmin)
-                            .addComponent(jLabel21))
+                            .addComponent(lblGmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnGsmin)
-                            .addComponent(jLabel22))
+                            .addComponent(lblGsmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnAmin)
-                            .addComponent(jLabel23))
+                            .addComponent(lblAmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnAsmin)
-                            .addComponent(jLabel24))
+                            .addComponent(lblAsmin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnBsmin)
-                            .addComponent(jLabel25)))
+                            .addComponent(btnBmin)
+                            .addComponent(lblBmin)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnCmaj)
-                            .addComponent(jLabel2))
+                            .addComponent(lblCmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnCsmaj)
-                            .addComponent(jLabel3))
+                            .addComponent(lblCsmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnDmaj)
-                            .addComponent(jLabel4))
+                            .addComponent(lblDmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
+                            .addComponent(lblDsmaj)
                             .addComponent(btnDsmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnEmaj)
-                            .addComponent(jLabel6))
+                            .addComponent(lblEmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnFmaj)
-                            .addComponent(jLabel7))
+                            .addComponent(lblFmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnFsmaj)
-                            .addComponent(jLabel8))
+                            .addComponent(lblFsmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnGmaj)
-                            .addComponent(jLabel9))
+                            .addComponent(lblGmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnGsmaj)
-                            .addComponent(jLabel10))
+                            .addComponent(lblGsmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnAmaj)
-                            .addComponent(jLabel11))
+                            .addComponent(lblAmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnAsmaj)
-                            .addComponent(jLabel12))
+                            .addComponent(lblAsmaj))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel13)
+                            .addComponent(lblBmaj)
                             .addComponent(btnBmaj))))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jButton1.setText("Save");
+        btnSave.setText("Save");
 
-        jButton26.setText("Cancel");
+        btnCancel.setText("Cancel");
+
+        jLabel2.setText("Variation name:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26)
+                        .addGap(6, 6, 6)
+                        .addComponent(cmbbxInstrumentType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtVariation, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btnSave)
                 .addGap(18, 18, 18)
-                .addComponent(jButton26)
+                .addComponent(btnCancel)
                 .addGap(32, 32, 32))
         );
         layout.setVerticalGroup(
@@ -398,16 +405,17 @@ public class UploadInstrument extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton26))
+                    .addComponent(cmbbxInstrumentType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtVariation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSave)
+                    .addComponent(btnCancel))
                 .addGap(27, 27, 27))
         );
 
@@ -463,7 +471,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     private javax.swing.JButton btnAsmaj;
     private javax.swing.JButton btnAsmin;
     private javax.swing.JButton btnBmaj;
-    private javax.swing.JButton btnBsmin;
+    private javax.swing.JButton btnBmin;
+    private javax.swing.JButton btnCancel;
     private javax.swing.JButton btnCmaj;
     private javax.swing.JButton btnCmin;
     private javax.swing.JButton btnCsmaj;
@@ -482,35 +491,35 @@ public class UploadInstrument extends javax.swing.JFrame {
     private javax.swing.JButton btnGmin;
     private javax.swing.JButton btnGsmaj;
     private javax.swing.JButton btnGsmin;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton btnSave;
+    private javax.swing.JComboBox<String> cmbbxInstrumentType;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel lblAmaj;
+    private javax.swing.JLabel lblAmin;
+    private javax.swing.JLabel lblAsmaj;
+    private javax.swing.JLabel lblAsmin;
+    private javax.swing.JLabel lblBmaj;
+    private javax.swing.JLabel lblBmin;
+    private javax.swing.JLabel lblCmaj;
+    private javax.swing.JLabel lblCmin;
+    private javax.swing.JLabel lblCsmaj;
+    private javax.swing.JLabel lblCsmin;
+    private javax.swing.JLabel lblDmaj;
+    private javax.swing.JLabel lblDmin;
+    private javax.swing.JLabel lblDsmaj;
+    private javax.swing.JLabel lblDsmin;
+    private javax.swing.JLabel lblEmaj;
+    private javax.swing.JLabel lblEmin;
+    private javax.swing.JLabel lblFmaj;
+    private javax.swing.JLabel lblFmin;
+    private javax.swing.JLabel lblFsmaj;
+    private javax.swing.JLabel lblFsmin;
+    private javax.swing.JLabel lblGmaj;
+    private javax.swing.JLabel lblGmin;
+    private javax.swing.JLabel lblGsmaj;
+    private javax.swing.JLabel lblGsmin;
+    private javax.swing.JTextField txtVariation;
     // End of variables declaration//GEN-END:variables
 }
