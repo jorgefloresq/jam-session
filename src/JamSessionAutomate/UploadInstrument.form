@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Component id="cmbbxInstrumentType" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="txtVariation" min="-2" pref="245" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="btnSave" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnCancel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cmbbxInstrumentType" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtVariation" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="13" max="32767" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnSave" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCancel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Shonar Bangla" size="36" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Upload Variation"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbbxInstrumentType">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="Bass"/>
+            <StringItem index="1" value="Guitar"/>
+            <StringItem index="2" value="Keys"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtVariation">
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+            <BevelBorder bevelType="1"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="btnCsmaj" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnDsmaj" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnGsmaj" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnFsmaj" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnCmaj" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnDmaj" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnEmaj" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnFmaj" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnGmaj" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnAsmaj" max="32767" attributes="0"/>
+                      <Component id="btnAmaj" alignment="1" max="32767" attributes="0"/>
+                      <Component id="btnBmaj" alignment="1" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblBmaj" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblAsmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblEmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblFmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblFsmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblGmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblGsmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblAmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblDsmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblCsmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblCmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblDmaj" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="29" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="btnCsmin" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnDsmin" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnGsmin" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnCmin" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnDmin" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnEmin" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnGmin" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnFmin" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnFsmin" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnAsmin" alignment="1" max="32767" attributes="0"/>
+                      <Component id="btnAmin" alignment="1" max="32767" attributes="0"/>
+                      <Component id="btnBmin" alignment="1" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblBmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblAsmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblEmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblFmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblFsmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblGmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblGsmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblAmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblDsmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblCsmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblCmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblDmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnCmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnCsmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCsmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnDmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblDmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblDsmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnDsmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnEmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblEmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnFmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblFmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnFsmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblFsmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnGmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblGmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnGsmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblGsmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnAmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblAmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnAsmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblAsmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnBmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblBmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnCmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnCsmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCsmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnDmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblDmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblDsmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnDsmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnEmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblEmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnFmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblFmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnFsmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblFsmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnGmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblGmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnGsmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblGsmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnAmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblAmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnAsmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblAsmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblBmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnBmaj" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="16" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="btnCmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="C Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnCsmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="C# Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnDmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="D Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnDsmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="D# Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnEmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="E Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnFmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="F Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnFsmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="F# Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnGmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="G Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblCmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnGsmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="G# Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblCsmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="A Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblDmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAsmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="A# Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblDsmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblEmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblFmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblFsmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblGmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblGsmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblAmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblAsmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblBmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnBmaj">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="B Major"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnCmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="C Minor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblCmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnCsmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="C# Minor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblCsmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnDmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="D Minor"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDminActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblDmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnDsmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="D# Minor"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDsminActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblDsmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnEmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="E Minor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblEmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnFmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="F Minor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblFmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnFsmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="F# Minor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblFsmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnGmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="G Minor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblGmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnGsmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="G# Minor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblGsmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="A Minor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblAmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAsmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="A# Minor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblAsmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnBmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="B Minor"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblBmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No File Chosen."/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="btnSave">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnCancel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancel"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Variation name:"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
