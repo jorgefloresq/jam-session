@@ -9,6 +9,9 @@
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+  </Events>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -382,6 +385,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblCmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -395,6 +401,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblCsmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -408,6 +417,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblDmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -421,46 +433,73 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblDsmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblEmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblFmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblFsmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblGmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblGsmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblAmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblAsmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblBmaj">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -482,6 +521,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblCmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -495,6 +537,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblCsmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -508,6 +553,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblDmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -521,6 +569,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblDsmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -534,6 +585,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblEmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -547,6 +601,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblFmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -560,6 +617,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblFsmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -573,6 +633,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblGmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -586,6 +649,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblGsmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -599,6 +665,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblAmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -612,6 +681,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblAsmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>
@@ -625,6 +697,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblBmin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="No File Chosen."/>
           </Properties>
         </Component>

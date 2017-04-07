@@ -1,5 +1,7 @@
 package JamSessionAutomate;
 
+import java.awt.Color;
+import java.util.HashMap;
 import javax.swing.JFileChooser;
 import javax.swing.*;
 
@@ -14,6 +16,9 @@ import javax.swing.*;
  * @author jcontreras
  */
 public class UploadInstrument extends javax.swing.JFrame {
+    
+    HashMap<String, String> map = new HashMap<String, String>();
+    
 
     /**
      * Creates new form UploadInstrument
@@ -89,6 +94,11 @@ public class UploadInstrument extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Shonar Bangla", 1, 36)); // NOI18N
         jLabel1.setText("Upload Variation");
@@ -153,6 +163,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblCmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblCmaj.setText("No File Chosen.");
 
         btnGsmaj.setText("G# Major");
@@ -162,6 +173,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblCsmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblCsmaj.setText("No File Chosen.");
 
         btnAmaj.setText("A Major");
@@ -171,6 +183,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblDmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblDmaj.setText("No File Chosen.");
 
         btnAsmaj.setText("A# Major");
@@ -180,22 +193,31 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblDsmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblDsmaj.setText("No File Chosen.");
 
+        lblEmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblEmaj.setText("No File Chosen.");
 
+        lblFmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblFmaj.setText("No File Chosen.");
 
+        lblFsmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblFsmaj.setText("No File Chosen.");
 
+        lblGmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblGmaj.setText("No File Chosen.");
 
+        lblGsmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblGsmaj.setText("No File Chosen.");
 
+        lblAmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblAmaj.setText("No File Chosen.");
 
+        lblAsmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblAsmaj.setText("No File Chosen.");
 
+        lblBmaj.setForeground(new java.awt.Color(255, 0, 0));
         lblBmaj.setText("No File Chosen.");
 
         btnBmaj.setText("B Major");
@@ -212,6 +234,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblCmin.setForeground(new java.awt.Color(255, 0, 0));
         lblCmin.setText("No File Chosen.");
 
         btnCsmin.setText("C# Minor");
@@ -221,6 +244,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblCsmin.setForeground(new java.awt.Color(255, 0, 0));
         lblCsmin.setText("No File Chosen.");
 
         btnDmin.setText("D Minor");
@@ -230,6 +254,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblDmin.setForeground(new java.awt.Color(255, 0, 0));
         lblDmin.setText("No File Chosen.");
 
         btnDsmin.setText("D# Minor");
@@ -239,6 +264,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblDsmin.setForeground(new java.awt.Color(255, 0, 0));
         lblDsmin.setText("No File Chosen.");
 
         btnEmin.setText("E Minor");
@@ -248,6 +274,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblEmin.setForeground(new java.awt.Color(255, 0, 0));
         lblEmin.setText("No File Chosen.");
 
         btnFmin.setText("F Minor");
@@ -257,6 +284,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblFmin.setForeground(new java.awt.Color(255, 0, 0));
         lblFmin.setText("No File Chosen.");
 
         btnFsmin.setText("F# Minor");
@@ -266,6 +294,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblFsmin.setForeground(new java.awt.Color(255, 0, 0));
         lblFsmin.setText("No File Chosen.");
 
         btnGmin.setText("G Minor");
@@ -275,6 +304,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblGmin.setForeground(new java.awt.Color(255, 0, 0));
         lblGmin.setText("No File Chosen.");
 
         btnGsmin.setText("G# Minor");
@@ -284,6 +314,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblGsmin.setForeground(new java.awt.Color(255, 0, 0));
         lblGsmin.setText("No File Chosen.");
 
         btnAmin.setText("A Minor");
@@ -293,6 +324,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblAmin.setForeground(new java.awt.Color(255, 0, 0));
         lblAmin.setText("No File Chosen.");
 
         btnAsmin.setText("A# Minor");
@@ -302,6 +334,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblAsmin.setForeground(new java.awt.Color(255, 0, 0));
         lblAsmin.setText("No File Chosen.");
 
         btnBmin.setText("B Minor");
@@ -311,6 +344,7 @@ public class UploadInstrument extends javax.swing.JFrame {
             }
         });
 
+        lblBmin.setForeground(new java.awt.Color(255, 0, 0));
         lblBmin.setText("No File Chosen.");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -538,100 +572,152 @@ public class UploadInstrument extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDsminActionPerformed
-        openFile(lblDsmin);
+        map.put("Dsmin", openFile(lblDsmin));
+        System.out.println(map.get("Dsmin"));
     }//GEN-LAST:event_btnDsminActionPerformed
 
     private void btnDminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDminActionPerformed
-        openFile(lblDmin);
+        map.put("Dmin", openFile(lblDmin));
+        System.out.println(map.get("Dmin"));
     }//GEN-LAST:event_btnDminActionPerformed
 
     private void btnCmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCmajActionPerformed
-        openFile(lblCmaj);
+        map.put("Cmaj", openFile(lblCmaj));
+        System.out.println(map.get("Cmaj"));
     }//GEN-LAST:event_btnCmajActionPerformed
 
     private void btnCsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCsmajActionPerformed
-        openFile(lblCsmaj);
+        map.put("Csmaj", openFile(lblCsmaj));
+        System.out.println(map.get("Csmaj"));
     }//GEN-LAST:event_btnCsmajActionPerformed
 
     private void btnDmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDmajActionPerformed
-        openFile(lblDmaj);
+        map.put("Dmaj", openFile(lblDmaj));
+        System.out.println(map.get("Dmaj"));
     }//GEN-LAST:event_btnDmajActionPerformed
 
     private void btnDsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDsmajActionPerformed
-        openFile(lblDsmaj);
+        map.put("Dsmaj", openFile(lblDsmaj));
+        System.out.println(map.get("Dsmaj"));
     }//GEN-LAST:event_btnDsmajActionPerformed
 
     private void btnEmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmajActionPerformed
-        openFile(lblEmaj);
+        map.put("Emaj", openFile(lblEmaj));
+        System.out.println(map.get("Emaj"));
     }//GEN-LAST:event_btnEmajActionPerformed
 
     private void btnFmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFmajActionPerformed
-        openFile(lblFmaj);
+        map.put("Fmaj", openFile(lblFmaj));
+        System.out.println(map.get("Fmaj"));
     }//GEN-LAST:event_btnFmajActionPerformed
 
     private void btnFsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFsmajActionPerformed
-        openFile(lblFsmaj);
+        map.put("Fsmaj", openFile(lblFsmaj));
+        System.out.println(map.get("Fsmaj"));
     }//GEN-LAST:event_btnFsmajActionPerformed
 
     private void btnGmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGmajActionPerformed
-        openFile(lblGmaj);
+        map.put("Gmaj", openFile(lblGmaj));
+        System.out.println(map.get("Gmaj"));
     }//GEN-LAST:event_btnGmajActionPerformed
 
     private void btnGsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGsmajActionPerformed
-        openFile(lblGsmaj);
+        map.put("Gsmaj", openFile(lblGsmaj));
+        System.out.println(map.get("Gsmaj"));
     }//GEN-LAST:event_btnGsmajActionPerformed
 
     private void btnAmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAmajActionPerformed
-        openFile(lblAmaj);
+        map.put("Amaj", openFile(lblAmaj));
+        System.out.println(map.get("Amaj"));
     }//GEN-LAST:event_btnAmajActionPerformed
 
     private void btnAsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsmajActionPerformed
-        openFile(lblAsmaj);
+        map.put("Asmaj", openFile(lblAsmaj));
+        System.out.println(map.get("Asmaj"));
     }//GEN-LAST:event_btnAsmajActionPerformed
 
     private void btnBmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBmajActionPerformed
-        openFile(lblCmaj);
+        map.put("Bmaj", openFile(lblBmaj));
+        System.out.println(map.get("Bmaj"));
     }//GEN-LAST:event_btnBmajActionPerformed
 
     private void btnCminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCminActionPerformed
-        openFile(lblCmin);
+        map.put("Cmin", openFile(lblCmin));
+        System.out.println(map.get("Cmin"));
     }//GEN-LAST:event_btnCminActionPerformed
 
     private void btnCsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCsminActionPerformed
-        openFile(lblCsmin);
+        map.put("Csmin", openFile(lblCsmin));
+        System.out.println(map.get("Csmin"));
     }//GEN-LAST:event_btnCsminActionPerformed
 
     private void btnEminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEminActionPerformed
-        openFile(lblEmin);
+        map.put("Emin", openFile(lblEmin));
+        System.out.println(map.get("Emin"));
     }//GEN-LAST:event_btnEminActionPerformed
 
     private void btnFminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFminActionPerformed
-        openFile(lblFmin);
+        map.put("Fmin", openFile(lblFmin));
+        System.out.println(map.get("Fmin"));
     }//GEN-LAST:event_btnFminActionPerformed
 
     private void btnFsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFsminActionPerformed
-        openFile(lblFsmin);
+        map.put("Fsmin", openFile(lblFsmin));
+        System.out.println(map.get("Fsmin"));
     }//GEN-LAST:event_btnFsminActionPerformed
 
     private void btnGminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGminActionPerformed
-        openFile(lblGmin);
+        map.put("Gmin", openFile(lblGmin));
+        System.out.println(map.get("Gmin"));
     }//GEN-LAST:event_btnGminActionPerformed
 
     private void btnGsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGsminActionPerformed
-        openFile(lblGsmin);
+        map.put("Gsmin", openFile(lblGsmin));
+        System.out.println(map.get("Gsmin"));
     }//GEN-LAST:event_btnGsminActionPerformed
 
     private void btnAminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAminActionPerformed
-        openFile(lblAmin);
+        map.put("Amin", openFile(lblAmin));
+        System.out.println(map.get("Amin"));
     }//GEN-LAST:event_btnAminActionPerformed
 
     private void btnAsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsminActionPerformed
-        openFile(lblAsmin);
+        map.put("Asmin", openFile(lblAsmin));
+        System.out.println(map.get("Asmin"));
     }//GEN-LAST:event_btnAsminActionPerformed
 
     private void btnBminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBminActionPerformed
-        openFile(lblBmin);
+        map.put("Bmin", openFile(lblBmin));
+        System.out.println(map.get("Bmin"));
     }//GEN-LAST:event_btnBminActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        map.put("Cmaj",null);
+        map.put("Csmaj",null);
+        map.put("Dmaj",null);
+        map.put("Dsmaj",null);
+        map.put("Emaj",null);
+        map.put("Fmaj",null);
+        map.put("F#maj",null);
+        map.put("Gmaj",null);
+        map.put("G#maj",null);
+        map.put("Amaj",null);
+        map.put("A#maj",null);
+        map.put("Bmaj",null);
+        
+        map.put("Cmin",null);
+        map.put("Csmin",null);
+        map.put("Dmin",null);
+        map.put("Dsmin",null);
+        map.put("Emin",null);
+        map.put("Fmin",null);
+        map.put("F#maj",null);
+        map.put("Gmin",null);
+        map.put("G#min",null);
+        map.put("Amin",null);
+        map.put("A#min",null);
+        map.put("Bmin",null);
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
@@ -668,13 +754,18 @@ public class UploadInstrument extends javax.swing.JFrame {
         });
     }
     
-    private void openFile(JLabel lbl){
+    //opens file chooser and returns string of chosen file
+    private String openFile(JLabel lbl){
         JButton open = new JButton();
         JFileChooser jfc = new JFileChooser(); 
+        //makes the open action do something??
         if(jfc.showOpenDialog(open) == JFileChooser.APPROVE_OPTION) { 
              
         }
-        System.out.println(jfc.getSelectedFile().getAbsolutePath());
+        //Label next to button is set to filename
+        lbl.setText(jfc.getSelectedFile().getName());
+        lbl.setForeground(Color.GREEN);
+        return jfc.getSelectedFile().getAbsolutePath();
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAmaj;
