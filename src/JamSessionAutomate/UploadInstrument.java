@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.util.HashMap;
 import javax.swing.JFileChooser;
 import javax.swing.*;
+import java.util.*;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -103,7 +104,7 @@ public class UploadInstrument extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Shonar Bangla", 1, 36)); // NOI18N
         jLabel1.setText("Upload Variation");
 
-        cmbbxInstrumentType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bass", "Guitar", "Keys" }));
+        cmbbxInstrumentType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "bass", "guitar", "keyz" }));
 
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
@@ -515,6 +516,11 @@ public class UploadInstrument extends javax.swing.JFrame {
         );
 
         btnSave.setText("Save");
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
+            }
+        });
 
         btnCancel.setText("Cancel");
 
@@ -718,6 +724,10 @@ public class UploadInstrument extends javax.swing.JFrame {
         map.put("A#min",null);
         map.put("Bmin",null);
     }//GEN-LAST:event_formWindowOpened
+
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+  
+    }//GEN-LAST:event_btnSaveActionPerformed
 
     /**
      * @param args the command line arguments
