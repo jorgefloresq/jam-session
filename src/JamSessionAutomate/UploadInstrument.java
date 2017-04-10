@@ -590,8 +590,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDsminActionPerformed
 
     private void btnDminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDminActionPerformed
-        map.put("Dmin", openFile(lblDmin));
-        System.out.println(map.get("Dmin"));
+        map.put("D Minor", openFile(lblDmin));
+        System.out.println(map.get("D Minor"));
     }//GEN-LAST:event_btnDminActionPerformed
 
     private void btnCmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCmajActionPerformed
@@ -610,8 +610,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDmajActionPerformed
 
     private void btnDsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDsmajActionPerformed
-        map.put("Dsmaj", openFile(lblDsmaj));
-        System.out.println(map.get("Dsmaj"));
+        map.put("D# Major", openFile(lblDsmaj));
+        System.out.println(map.get("D# Major"));
     }//GEN-LAST:event_btnDsmajActionPerformed
 
     private void btnEmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmajActionPerformed
@@ -625,8 +625,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFmajActionPerformed
 
     private void btnFsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFsmajActionPerformed
-        map.put("Fsmaj", openFile(lblFsmaj));
-        System.out.println(map.get("Fsmaj"));
+        map.put("F# Major", openFile(lblFsmaj));
+        System.out.println(map.get("F# Major"));
     }//GEN-LAST:event_btnFsmajActionPerformed
 
     private void btnGmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGmajActionPerformed
@@ -635,8 +635,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGmajActionPerformed
 
     private void btnGsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGsmajActionPerformed
-        map.put("Gsmaj", openFile(lblGsmaj));
-        System.out.println(map.get("Gsmaj"));
+        map.put("G# Major", openFile(lblGsmaj));
+        System.out.println(map.get("G# Major"));
     }//GEN-LAST:event_btnGsmajActionPerformed
 
     private void btnAmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAmajActionPerformed
@@ -645,8 +645,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAmajActionPerformed
 
     private void btnAsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsmajActionPerformed
-        map.put("Asmaj", openFile(lblAsmaj));
-        System.out.println(map.get("Asmaj"));
+        map.put("A# Major", openFile(lblAsmaj));
+        System.out.println(map.get("A# Major"));
     }//GEN-LAST:event_btnAsmajActionPerformed
 
     private void btnBmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBmajActionPerformed
@@ -655,8 +655,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBmajActionPerformed
 
     private void btnCminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCminActionPerformed
-        map.put("Cmin", openFile(lblCmin));
-        System.out.println(map.get("Cmin"));
+        map.put("C Minor", openFile(lblCmin));
+        System.out.println(map.get("C Minor"));
     }//GEN-LAST:event_btnCminActionPerformed
 
     private void btnCsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCsminActionPerformed
@@ -720,8 +720,9 @@ public class UploadInstrument extends javax.swing.JFrame {
         File sourceFile;
         Path sourcePath;
         File destinationDirectory;
+        File destinationFile;
         Path p;
-        if(map.containsValue(null)&& !txtVariation.getText().equals("")){
+        if(!map.containsValue(null)&& !txtVariation.getText().equals("")){
             
             destinationDirectory = new File("Audio/"+cmbbxInstrumentType.getSelectedItem().toString()+"/"+txtVariation.getText());
             destinationDirectory.mkdirs();
@@ -730,8 +731,10 @@ public class UploadInstrument extends javax.swing.JFrame {
                 fileName = txtVariation.getText()+"_"+chord;
                 sourceFile = new File(map.get(chord));
                 sourcePath = sourceFile.toPath();
+                destinationFile = new File("Audio/"+cmbbxInstrumentType.getSelectedItem().toString()+"/"+txtVariation.getText()+"/"+fileName+".wav");
                 try{
-                    Files.copy(sourcePath, destinationDirectory.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                    Files.copy(sourcePath, destinationFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                    System.out.println("Success");
                 }
                 catch(Exception e){
                     System.out.println("Unable to copy");
