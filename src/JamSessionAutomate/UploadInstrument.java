@@ -1,10 +1,16 @@
 package JamSessionAutomate;
 
 import java.awt.Color;
+import java.io.File;
+import java.net.URI;
 import java.util.HashMap;
 import javax.swing.JFileChooser;
 import javax.swing.*;
 import java.util.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -17,8 +23,9 @@ import java.util.*;
  * @author jcontreras
  */
 public class UploadInstrument extends javax.swing.JFrame {
-    
-    HashMap<String, String> map = new HashMap<String, String>();
+    private String[] chords = {"C Major","C# Major","D Major","D# Major","E Major","F Major","F# Major","G Major","G# Major","A Major","A# Major","B Major",
+        "C Minor","C# Minor","D Minor","D# Minor","E Minor","F Minor","F# Minor","G Minor","G# Minor","A Minor","A# Minor","B Minor"};
+    private HashMap<String, String> map = new HashMap<String, String>();
     
 
     /**
@@ -578,8 +585,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDsminActionPerformed
-        map.put("Dsmin", openFile(lblDsmin));
-        System.out.println(map.get("Dsmin"));
+        map.put("D# Minor", openFile(lblDsmin));
+        System.out.println(map.get("D# Minor"));
     }//GEN-LAST:event_btnDsminActionPerformed
 
     private void btnDminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDminActionPerformed
@@ -588,18 +595,18 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDminActionPerformed
 
     private void btnCmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCmajActionPerformed
-        map.put("Cmaj", openFile(lblCmaj));
-        System.out.println(map.get("Cmaj"));
+        map.put("C Major", openFile(lblCmaj));
+        System.out.println(map.get("C Major"));
     }//GEN-LAST:event_btnCmajActionPerformed
 
     private void btnCsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCsmajActionPerformed
-        map.put("Csmaj", openFile(lblCsmaj));
-        System.out.println(map.get("Csmaj"));
+        map.put("C# Major", openFile(lblCsmaj));
+        System.out.println(map.get("C# Major"));
     }//GEN-LAST:event_btnCsmajActionPerformed
 
     private void btnDmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDmajActionPerformed
-        map.put("Dmaj", openFile(lblDmaj));
-        System.out.println(map.get("Dmaj"));
+        map.put("D Major", openFile(lblDmaj));
+        System.out.println(map.get("D Major"));
     }//GEN-LAST:event_btnDmajActionPerformed
 
     private void btnDsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDsmajActionPerformed
@@ -608,13 +615,13 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDsmajActionPerformed
 
     private void btnEmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmajActionPerformed
-        map.put("Emaj", openFile(lblEmaj));
-        System.out.println(map.get("Emaj"));
+        map.put("E Major", openFile(lblEmaj));
+        System.out.println(map.get("E Major"));
     }//GEN-LAST:event_btnEmajActionPerformed
 
     private void btnFmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFmajActionPerformed
-        map.put("Fmaj", openFile(lblFmaj));
-        System.out.println(map.get("Fmaj"));
+        map.put("F Major", openFile(lblFmaj));
+        System.out.println(map.get("F Major"));
     }//GEN-LAST:event_btnFmajActionPerformed
 
     private void btnFsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFsmajActionPerformed
@@ -623,8 +630,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFsmajActionPerformed
 
     private void btnGmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGmajActionPerformed
-        map.put("Gmaj", openFile(lblGmaj));
-        System.out.println(map.get("Gmaj"));
+        map.put("G Major", openFile(lblGmaj));
+        System.out.println(map.get("G Major"));
     }//GEN-LAST:event_btnGmajActionPerformed
 
     private void btnGsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGsmajActionPerformed
@@ -633,8 +640,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGsmajActionPerformed
 
     private void btnAmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAmajActionPerformed
-        map.put("Amaj", openFile(lblAmaj));
-        System.out.println(map.get("Amaj"));
+        map.put("A Major", openFile(lblAmaj));
+        System.out.println(map.get("A Major"));
     }//GEN-LAST:event_btnAmajActionPerformed
 
     private void btnAsmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsmajActionPerformed
@@ -643,8 +650,8 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAsmajActionPerformed
 
     private void btnBmajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBmajActionPerformed
-        map.put("Bmaj", openFile(lblBmaj));
-        System.out.println(map.get("Bmaj"));
+        map.put("B Major", openFile(lblBmaj));
+        System.out.println(map.get("B Major"));
     }//GEN-LAST:event_btnBmajActionPerformed
 
     private void btnCminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCminActionPerformed
@@ -653,80 +660,88 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCminActionPerformed
 
     private void btnCsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCsminActionPerformed
-        map.put("Csmin", openFile(lblCsmin));
-        System.out.println(map.get("Csmin"));
+        map.put("C# Minor", openFile(lblCsmin));
+        System.out.println(map.get("C# Minor"));
     }//GEN-LAST:event_btnCsminActionPerformed
 
     private void btnEminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEminActionPerformed
-        map.put("Emin", openFile(lblEmin));
-        System.out.println(map.get("Emin"));
+        map.put("E Minor", openFile(lblEmin));
+        System.out.println(map.get("E Minor"));
     }//GEN-LAST:event_btnEminActionPerformed
 
     private void btnFminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFminActionPerformed
-        map.put("Fmin", openFile(lblFmin));
-        System.out.println(map.get("Fmin"));
+        map.put("F Minor", openFile(lblFmin));
+        System.out.println(map.get("F Minor"));
     }//GEN-LAST:event_btnFminActionPerformed
 
     private void btnFsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFsminActionPerformed
-        map.put("Fsmin", openFile(lblFsmin));
-        System.out.println(map.get("Fsmin"));
+        map.put("F# Minor", openFile(lblFsmin));
+        System.out.println(map.get("F# Minor"));
     }//GEN-LAST:event_btnFsminActionPerformed
 
     private void btnGminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGminActionPerformed
-        map.put("Gmin", openFile(lblGmin));
-        System.out.println(map.get("Gmin"));
+        map.put("G Minor", openFile(lblGmin));
+        System.out.println(map.get("G Minor"));
     }//GEN-LAST:event_btnGminActionPerformed
 
     private void btnGsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGsminActionPerformed
-        map.put("Gsmin", openFile(lblGsmin));
-        System.out.println(map.get("Gsmin"));
+        map.put("G# Minor", openFile(lblGsmin));
+        System.out.println(map.get("G# Minor"));
     }//GEN-LAST:event_btnGsminActionPerformed
 
     private void btnAminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAminActionPerformed
-        map.put("Amin", openFile(lblAmin));
-        System.out.println(map.get("Amin"));
+        map.put("A Minor", openFile(lblAmin));
+        System.out.println(map.get("A Minor"));
     }//GEN-LAST:event_btnAminActionPerformed
 
     private void btnAsminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsminActionPerformed
-        map.put("Asmin", openFile(lblAsmin));
-        System.out.println(map.get("Asmin"));
+        map.put("A# Minor", openFile(lblAsmin));
+        System.out.println(map.get("A# Minor"));
     }//GEN-LAST:event_btnAsminActionPerformed
 
     private void btnBminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBminActionPerformed
-        map.put("Bmin", openFile(lblBmin));
-        System.out.println(map.get("Bmin"));
+        map.put("B Minor", openFile(lblBmin));
+        System.out.println(map.get("B Minor"));
     }//GEN-LAST:event_btnBminActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        map.put("Cmaj",null);
-        map.put("Csmaj",null);
-        map.put("Dmaj",null);
-        map.put("Dsmaj",null);
-        map.put("Emaj",null);
-        map.put("Fmaj",null);
-        map.put("F#maj",null);
-        map.put("Gmaj",null);
-        map.put("G#maj",null);
-        map.put("Amaj",null);
-        map.put("A#maj",null);
-        map.put("Bmaj",null);
         
-        map.put("Cmin",null);
-        map.put("Csmin",null);
-        map.put("Dmin",null);
-        map.put("Dsmin",null);
-        map.put("Emin",null);
-        map.put("Fmin",null);
-        map.put("F#maj",null);
-        map.put("Gmin",null);
-        map.put("G#min",null);
-        map.put("Amin",null);
-        map.put("A#min",null);
-        map.put("Bmin",null);
+        for(String s : chords){
+            map.put(s,null);
+        }
+        
     }//GEN-LAST:event_formWindowOpened
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-  
+        //System.out.println(Arrays.toString(map.values().toArray()));
+        //System.out.println(Arrays.toString(map.keySet().toArray()));
+        String fileName;
+        String destinationPath;
+        File sourceFile;
+        Path sourcePath;
+        File destinationDirectory;
+        Path p;
+        if(map.containsValue(null)&& !txtVariation.getText().equals("")){
+            
+            destinationDirectory = new File("Audio/"+cmbbxInstrumentType.getSelectedItem().toString()+"/"+txtVariation.getText());
+            destinationDirectory.mkdirs();
+            
+            for(String chord: chords){
+                fileName = txtVariation.getText()+"_"+chord;
+                sourceFile = new File(map.get(chord));
+                sourcePath = sourceFile.toPath();
+                try{
+                    Files.copy(sourcePath, destinationDirectory.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                }
+                catch(Exception e){
+                    System.out.println("Unable to copy");
+                }
+                //cmbbxInstrumentType.getSelectedItem().toString()
+            }
+        }
+        else{
+            System.out.println("Missing Files");
+        }
     }//GEN-LAST:event_btnSaveActionPerformed
 
     /**
