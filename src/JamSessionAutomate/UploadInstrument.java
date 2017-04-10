@@ -716,12 +716,10 @@ public class UploadInstrument extends javax.swing.JFrame {
         //System.out.println(Arrays.toString(map.values().toArray()));
         //System.out.println(Arrays.toString(map.keySet().toArray()));
         String fileName;
-        String destinationPath;
         File sourceFile;
         Path sourcePath;
         File destinationDirectory;
         File destinationFile;
-        Path p;
         if(!map.containsValue(null)&& !txtVariation.getText().equals("")){
             
             destinationDirectory = new File("Audio/"+cmbbxInstrumentType.getSelectedItem().toString()+"/"+txtVariation.getText());
@@ -734,13 +732,13 @@ public class UploadInstrument extends javax.swing.JFrame {
                 destinationFile = new File("Audio/"+cmbbxInstrumentType.getSelectedItem().toString()+"/"+txtVariation.getText()+"/"+fileName+".wav");
                 try{
                     Files.copy(sourcePath, destinationFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-                    System.out.println("Success");
                 }
                 catch(Exception e){
                     System.out.println("Unable to copy");
                 }
                 //cmbbxInstrumentType.getSelectedItem().toString()
             }
+            System.out.println("Success");
         }
         else{
             System.out.println("Missing Files");
