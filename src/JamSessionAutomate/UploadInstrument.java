@@ -790,7 +790,7 @@ public class UploadInstrument extends javax.swing.JFrame {
         }
         //Label next to button is set to filename
         lbl.setText(jfc.getSelectedFile().getName());
-        lbl.setForeground(Color.GREEN);
+        lbl.setForeground(new Color(51,204,51));
         return jfc.getSelectedFile().getAbsolutePath();
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
