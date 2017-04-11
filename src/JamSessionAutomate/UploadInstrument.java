@@ -782,16 +782,20 @@ public class UploadInstrument extends javax.swing.JFrame {
     
     //opens file chooser and returns string of chosen file
     private String openFile(JLabel lbl){
-        JButton open = new JButton();
+        //JButton open = new JButton();
         JFileChooser jfc = new JFileChooser(); 
         //makes the open action do something??
-        if(jfc.showOpenDialog(open) == JFileChooser.APPROVE_OPTION) { 
-             
+        if(jfc.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) { 
+            lbl.setText(jfc.getSelectedFile().getName());
+            lbl.setForeground(new Color(51,204,51));
+            return jfc.getSelectedFile().getAbsolutePath();    
         }
-        //Label next to button is set to filename
-        lbl.setText(jfc.getSelectedFile().getName());
-        lbl.setForeground(Color.GREEN);
-        return jfc.getSelectedFile().getAbsolutePath();
+        else if(lbl.getText().equals("No File Chosen.")){
+            return null;
+        }
+        else{
+            return lbl.getText();
+        }
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAmaj;
