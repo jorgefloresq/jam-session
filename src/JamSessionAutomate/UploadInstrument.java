@@ -26,7 +26,7 @@ public class UploadInstrument extends javax.swing.JFrame {
     private String[] chords = {"C Major","C# Major","D Major","D# Major","E Major","F Major","F# Major","G Major","G# Major","A Major","A# Major","B Major",
         "C Minor","C# Minor","D Minor","D# Minor","E Minor","F Minor","F# Minor","G Minor","G# Minor","A Minor","A# Minor","B Minor"};
     private HashMap<String, String> map = new HashMap<String, String>();
-    
+    private String p;
 
     /**
      * Creates new form UploadInstrument
@@ -715,6 +715,9 @@ public class UploadInstrument extends javax.swing.JFrame {
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         //System.out.println(Arrays.toString(map.values().toArray()));
         //System.out.println(Arrays.toString(map.keySet().toArray()));
+        
+        Backend.connectDB();
+        
         String fileName;
         File sourceFile;
         Path sourcePath;
@@ -726,10 +729,14 @@ public class UploadInstrument extends javax.swing.JFrame {
             destinationDirectory.mkdirs();
             
             for(String chord: chords){
+                
+                
                 fileName = txtVariation.getText()+"_"+chord;
+                p = "Audio/"+cmbbxInstrumentType.getSelectedItem().toString()+"/"+txtVariation.getText()+"/"+fileName+".wav";
+                Backend.addChordToDb(cmbbxInstrumentType.getSelectedItem().toString(),p,txtVariation.getText(),chord);
                 sourceFile = new File(map.get(chord));
                 sourcePath = sourceFile.toPath();
-                destinationFile = new File("Audio/"+cmbbxInstrumentType.getSelectedItem().toString()+"/"+txtVariation.getText()+"/"+fileName+".wav");
+                destinationFile = new File(p);
                 try{
                     Files.copy(sourcePath, destinationFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
                 }
@@ -783,7 +790,7 @@ public class UploadInstrument extends javax.swing.JFrame {
     //opens file chooser and returns string of chosen file
     private String openFile(JLabel lbl){
         //JButton open = new JButton();
-        JFileChooser jfc = new JFileChooser(); 
+        JFileChooser jfc = new JFileChooser("E:\\Samples\\piano"); 
         //makes the open action do something??
         if(jfc.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) { 
             lbl.setText(jfc.getSelectedFile().getName());
