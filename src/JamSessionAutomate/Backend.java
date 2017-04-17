@@ -91,5 +91,20 @@ public class Backend {
         return path;
     }
     
+    public static void addChordToDb(String inst,String path,String var,String chord){
+        
+        try{
+        statement.executeUpdate("USE musicloops;");
+        
+        String query = "insert into "+inst+" values  ('"+path+"', '"+var+"','"+chord+"')";
+        
+        statement.executeUpdate(query); 
+        }
+        
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
+    
     
 }
