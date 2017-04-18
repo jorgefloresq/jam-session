@@ -110,10 +110,25 @@ public class JamFrame extends javax.swing.JFrame {
         });
 
         cmbChord3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A  Minor", "A# Minor", "B Minor" }));
+        cmbChord3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbChord3ActionPerformed(evt);
+            }
+        });
 
         cmbChord4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A  Minor", "A# Minor", "B Minor" }));
+        cmbChord4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbChord4ActionPerformed(evt);
+            }
+        });
 
         cmbChord5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A  Minor", "A# Minor", "B Minor" }));
+        cmbChord5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbChord5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -166,6 +181,11 @@ public class JamFrame extends javax.swing.JFrame {
         rbKeys.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 rbKeysStateChanged(evt);
+            }
+        });
+        rbKeys.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbKeysActionPerformed(evt);
             }
         });
 
@@ -233,12 +253,32 @@ public class JamFrame extends javax.swing.JFrame {
         });
 
         btn1.setText("1");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1ActionPerformed(evt);
+            }
+        });
 
         btn2.setText("2");
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
 
         btn3.setText("3");
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
 
         btn4.setText("4");
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
 
         btn5.setText("5");
         btn5.addActionListener(new java.awt.event.ActionListener() {
@@ -351,7 +391,12 @@ public class JamFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowOpened
 
     private void cmbChord2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbChord2ActionPerformed
-        // TODO add your handling code here:
+        bassTrack.updatePath(Backend.getChordPath("bass",(String)cmbbxBass.getSelectedItem(),
+                             (String)cmbChord2.getSelectedItem()));
+        guitarTrack.updatePath(Backend.getChordPath("guitar",(String)cmbbxGuitar.getSelectedItem(),
+                             (String)cmbChord2.getSelectedItem()));
+        keysTrack.updatePath(Backend.getChordPath("keyz",(String)cmbbxKeys.getSelectedItem(),
+                             (String)cmbChord2.getSelectedItem()));
     }//GEN-LAST:event_cmbChord2ActionPerformed
 
     private void tglPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tglPlayActionPerformed
@@ -395,7 +440,7 @@ public class JamFrame extends javax.swing.JFrame {
             ClipSequencer.started = true;
             
             ClipSequencer.updateSequence(chkbxsSelected);
-            timer.schedule(new ClipSequencer(tracks),0,6072);
+            timer.schedule(new ClipSequencer(tracks),0,3036);
         }
         else{
             
@@ -419,7 +464,12 @@ public class JamFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_formKeyReleased
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-     
+        bassTrack.updatePath(Backend.getChordPath("bass",(String)cmbbxBass.getSelectedItem(),
+                             (String)cmbChord5.getSelectedItem()));
+        guitarTrack.updatePath(Backend.getChordPath("guitar",(String)cmbbxGuitar.getSelectedItem(),
+                             (String)cmbChord5.getSelectedItem()));
+        keysTrack.updatePath(Backend.getChordPath("keyz",(String)cmbbxKeys.getSelectedItem(),
+                             (String)cmbChord5.getSelectedItem()));
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void cmbbxDrumsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbbxDrumsActionPerformed
@@ -441,6 +491,58 @@ public class JamFrame extends javax.swing.JFrame {
     private void rbBassStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_rbBassStateChanged
         refreshSequence();
     }//GEN-LAST:event_rbBassStateChanged
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        bassTrack.updatePath(Backend.getChordPath("bass",(String)cmbbxBass.getSelectedItem(),
+                             (String)cmbChord1.getSelectedItem()));
+        guitarTrack.updatePath(Backend.getChordPath("guitar",(String)cmbbxGuitar.getSelectedItem(),
+                             (String)cmbChord1.getSelectedItem()));
+        keysTrack.updatePath(Backend.getChordPath("keyz",(String)cmbbxKeys.getSelectedItem(),
+                             (String)cmbChord1.getSelectedItem()));
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void rbKeysActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbKeysActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbKeysActionPerformed
+
+    private void cmbChord3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbChord3ActionPerformed
+        
+    }//GEN-LAST:event_cmbChord3ActionPerformed
+
+    private void cmbChord4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbChord4ActionPerformed
+
+    }//GEN-LAST:event_cmbChord4ActionPerformed
+
+    private void cmbChord5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbChord5ActionPerformed
+    
+    }//GEN-LAST:event_cmbChord5ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        bassTrack.updatePath(Backend.getChordPath("bass",(String)cmbbxBass.getSelectedItem(),
+                             (String)cmbChord2.getSelectedItem()));
+        guitarTrack.updatePath(Backend.getChordPath("guitar",(String)cmbbxGuitar.getSelectedItem(),
+                             (String)cmbChord2.getSelectedItem()));
+        keysTrack.updatePath(Backend.getChordPath("keyz",(String)cmbbxKeys.getSelectedItem(),
+                             (String)cmbChord2.getSelectedItem()));
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        bassTrack.updatePath(Backend.getChordPath("bass",(String)cmbbxBass.getSelectedItem(),
+                             (String)cmbChord4.getSelectedItem()));
+        guitarTrack.updatePath(Backend.getChordPath("guitar",(String)cmbbxGuitar.getSelectedItem(),
+                             (String)cmbChord4.getSelectedItem()));
+        keysTrack.updatePath(Backend.getChordPath("keyz",(String)cmbbxKeys.getSelectedItem(),
+                             (String)cmbChord4.getSelectedItem()));
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        bassTrack.updatePath(Backend.getChordPath("bass",(String)cmbbxBass.getSelectedItem(),
+                             (String)cmbChord3.getSelectedItem()));
+        guitarTrack.updatePath(Backend.getChordPath("guitar",(String)cmbbxGuitar.getSelectedItem(),
+                             (String)cmbChord3.getSelectedItem()));
+        keysTrack.updatePath(Backend.getChordPath("keyz",(String)cmbbxKeys.getSelectedItem(),
+                             (String)cmbChord3.getSelectedItem()));
+    }//GEN-LAST:event_btn3ActionPerformed
 
     /**
      * @param args the command line arguments
