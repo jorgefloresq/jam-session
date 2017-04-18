@@ -21,6 +21,7 @@ public class ClipSequencer extends TimerTask {
     private static ArrayList<Boolean> sequenceArray; 
     private static ArrayList<InstrumentTrack> tracks;
     private static int count = 0;
+    private static int counter = 0;
     
     public  ClipSequencer(ArrayList<InstrumentTrack> tracks){
         this.tracks = tracks;
@@ -29,7 +30,8 @@ public class ClipSequencer extends TimerTask {
     
     public void run(){
         
-        System.out.println("test");
+        System.out.println(counter);
+        counter++;
         System.out.println(sequenceArray);
         for(int i =0;i<sequenceArray.size();i++){
             if(sequenceArray.get(i)){
