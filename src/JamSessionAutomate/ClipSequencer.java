@@ -32,11 +32,11 @@ public class ClipSequencer extends TimerTask {
         
         System.out.println(counter);
         counter++;
-        System.out.println(sequenceArray);
+        //System.out.println(sequenceArray);
         for(int i =0;i<sequenceArray.size();i++){
             if(sequenceArray.get(i)){
                 
-                System.out.println(tracks.get(i).getPath());
+                //System.out.println(tracks.get(i).getPath());
                 tracks.get(i).stop();
                 tracks.get(i).play();
                 

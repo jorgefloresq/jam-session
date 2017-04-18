@@ -50,13 +50,20 @@ public class InstrumentTrack {
     }
     
     public void play(){
+        
+        System.out.println("is running: "+clip.isRunning());
         clip.start();
+        
+        //System.out.println("clipstart");
+        
     }
     
     public void stop(){
+        
         clip.stop();
         clip.flush();
         clip.setFramePosition(0);
+        
     }
     
     public String getPath(){

@@ -100,30 +100,30 @@ public class JamFrame extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Chords"));
 
-        cmbChord1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A  Minor", "A# Minor", "B Minor" }));
+        cmbChord1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A Minor", "A# Minor", "B Minor" }));
 
-        cmbChord2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A  Minor", "A# Minor", "B Minor" }));
+        cmbChord2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A Minor", "A# Minor", "B Minor" }));
         cmbChord2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbChord2ActionPerformed(evt);
             }
         });
 
-        cmbChord3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A  Minor", "A# Minor", "B Minor" }));
+        cmbChord3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A Minor", "A# Minor", "B Minor" }));
         cmbChord3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbChord3ActionPerformed(evt);
             }
         });
 
-        cmbChord4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A  Minor", "A# Minor", "B Minor" }));
+        cmbChord4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A Minor", "A# Minor", "B Minor" }));
         cmbChord4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbChord4ActionPerformed(evt);
             }
         });
 
-        cmbChord5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A  Minor", "A# Minor", "B Minor" }));
+        cmbChord5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Major", "C# Major", "D Major", "D# Major", "E Major", "F Major", "F# Major", "G Major", "G# Major", "A Major", "A# Major", "B Major", "C Minor", "C# Minor", "D Minor", "D# Minor", "E Minor", "F Minor", "F# Minor", "G Minor", "G# Minor", "A Minor", "A# Minor", "B Minor" }));
         cmbChord5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbChord5ActionPerformed(evt);
@@ -253,6 +253,7 @@ public class JamFrame extends javax.swing.JFrame {
         });
 
         btn1.setText("1");
+        btn1.setEnabled(false);
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
@@ -260,6 +261,7 @@ public class JamFrame extends javax.swing.JFrame {
         });
 
         btn2.setText("2");
+        btn2.setEnabled(false);
         btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn2ActionPerformed(evt);
@@ -267,6 +269,7 @@ public class JamFrame extends javax.swing.JFrame {
         });
 
         btn3.setText("3");
+        btn3.setEnabled(false);
         btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn3ActionPerformed(evt);
@@ -274,6 +277,7 @@ public class JamFrame extends javax.swing.JFrame {
         });
 
         btn4.setText("4");
+        btn4.setEnabled(false);
         btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn4ActionPerformed(evt);
@@ -281,6 +285,7 @@ public class JamFrame extends javax.swing.JFrame {
         });
 
         btn5.setText("5");
+        btn5.setEnabled(false);
         btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn5ActionPerformed(evt);
@@ -387,6 +392,7 @@ public class JamFrame extends javax.swing.JFrame {
                             ,(String)cmbbxKeys.getSelectedItem(),(String)cmbChord1.getSelectedItem());
             
             System.out.println(drumTrack.getClipDuration());
+
         
         
         
@@ -397,8 +403,23 @@ public class JamFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbChord2ActionPerformed
 
     private void tglPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tglPlayActionPerformed
+
         if(!ClipSequencer.started){
+            cmbChord1.setEnabled(false);
+            cmbChord2.setEnabled(false);
+            cmbChord3.setEnabled(false);
+            cmbChord4.setEnabled(false);
+            cmbChord5.setEnabled(false);
+            cmbbxDrums.setEnabled(false);
+            cmbbxGuitar.setEnabled(false);
+            cmbbxBass.setEnabled(false);
+            cmbbxKeys.setEnabled(false);
             
+            btn1.setEnabled(true);
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
             
             //Add default radiobutton objects to arraylist
             rbs.clear();
@@ -440,6 +461,22 @@ public class JamFrame extends javax.swing.JFrame {
             timer.schedule(new ClipSequencer(tracks),0,drumTrack.getClipDuration());
         }
         else{
+            cmbChord1.setEnabled(true);
+            cmbChord2.setEnabled(true);
+            cmbChord3.setEnabled(true);
+            cmbChord4.setEnabled(true);
+            cmbChord5.setEnabled(true);
+            
+            cmbbxDrums.setEnabled(true);
+            cmbbxGuitar.setEnabled(true);
+            cmbbxBass.setEnabled(true);
+            cmbbxKeys.setEnabled(true);
+            
+            btn1.setEnabled(false);
+            btn2.setEnabled(false);
+            btn3.setEnabled(false);
+            btn4.setEnabled(false);
+            btn5.setEnabled(false);
             
             //ClipSequencer.incrementCount();
             ClipSequencer.started = false;
