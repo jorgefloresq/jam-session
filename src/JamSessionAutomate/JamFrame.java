@@ -385,18 +385,15 @@ public class JamFrame extends javax.swing.JFrame {
             keysTrack = new InstrumentTrack("keys",Backend.getChordPath("keyz",(String)cmbbxKeys.getSelectedItem(),
                              (String)cmbChord1.getSelectedItem())
                             ,(String)cmbbxKeys.getSelectedItem(),(String)cmbChord1.getSelectedItem());
+            
+            System.out.println(drumTrack.getClipDuration());
         
         
         
     }//GEN-LAST:event_formWindowOpened
 
     private void cmbChord2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbChord2ActionPerformed
-        bassTrack.updatePath(Backend.getChordPath("bass",(String)cmbbxBass.getSelectedItem(),
-                             (String)cmbChord2.getSelectedItem()));
-        guitarTrack.updatePath(Backend.getChordPath("guitar",(String)cmbbxGuitar.getSelectedItem(),
-                             (String)cmbChord2.getSelectedItem()));
-        keysTrack.updatePath(Backend.getChordPath("keyz",(String)cmbbxKeys.getSelectedItem(),
-                             (String)cmbChord2.getSelectedItem()));
+
     }//GEN-LAST:event_cmbChord2ActionPerformed
 
     private void tglPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tglPlayActionPerformed
@@ -440,7 +437,7 @@ public class JamFrame extends javax.swing.JFrame {
             ClipSequencer.started = true;
             
             ClipSequencer.updateSequence(chkbxsSelected);
-            timer.schedule(new ClipSequencer(tracks),0,3036);
+            timer.schedule(new ClipSequencer(tracks),0,drumTrack.getClipDuration());
         }
         else{
             
