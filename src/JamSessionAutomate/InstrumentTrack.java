@@ -71,4 +71,7 @@ public class InstrumentTrack {
     public String getInstrument(){
         return this.instrument;
     }
+    public int getClipDuration(){
+        return ((int)clip.getMicrosecondLength()/1000);
+    }
 }
