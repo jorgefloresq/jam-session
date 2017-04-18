@@ -184,7 +184,7 @@
                 <StringItem index="18" value="F# Minor"/>
                 <StringItem index="19" value="G Minor"/>
                 <StringItem index="20" value="G# Minor"/>
-                <StringItem index="21" value="A  Minor"/>
+                <StringItem index="21" value="A Minor"/>
                 <StringItem index="22" value="A# Minor"/>
                 <StringItem index="23" value="B Minor"/>
               </StringArray>
@@ -219,7 +219,7 @@
                 <StringItem index="18" value="F# Minor"/>
                 <StringItem index="19" value="G Minor"/>
                 <StringItem index="20" value="G# Minor"/>
-                <StringItem index="21" value="A  Minor"/>
+                <StringItem index="21" value="A Minor"/>
                 <StringItem index="22" value="A# Minor"/>
                 <StringItem index="23" value="B Minor"/>
               </StringArray>
@@ -257,12 +257,15 @@
                 <StringItem index="18" value="F# Minor"/>
                 <StringItem index="19" value="G Minor"/>
                 <StringItem index="20" value="G# Minor"/>
-                <StringItem index="21" value="A  Minor"/>
+                <StringItem index="21" value="A Minor"/>
                 <StringItem index="22" value="A# Minor"/>
                 <StringItem index="23" value="B Minor"/>
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbChord3ActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
@@ -292,12 +295,15 @@
                 <StringItem index="18" value="F# Minor"/>
                 <StringItem index="19" value="G Minor"/>
                 <StringItem index="20" value="G# Minor"/>
-                <StringItem index="21" value="A  Minor"/>
+                <StringItem index="21" value="A Minor"/>
                 <StringItem index="22" value="A# Minor"/>
                 <StringItem index="23" value="B Minor"/>
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbChord4ActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
@@ -327,12 +333,15 @@
                 <StringItem index="18" value="F# Minor"/>
                 <StringItem index="19" value="G Minor"/>
                 <StringItem index="20" value="G# Minor"/>
-                <StringItem index="21" value="A  Minor"/>
+                <StringItem index="21" value="A Minor"/>
                 <StringItem index="22" value="A# Minor"/>
                 <StringItem index="23" value="B Minor"/>
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbChord5ActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
@@ -420,6 +429,7 @@
           </Properties>
           <Events>
             <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="rbKeysStateChanged"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbKeysActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JComboBox" name="cmbbxDrums">
@@ -489,26 +499,43 @@
     <Component class="javax.swing.JButton" name="btn1">
       <Properties>
         <Property name="text" type="java.lang.String" value="1"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn2">
       <Properties>
         <Property name="text" type="java.lang.String" value="2"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn3">
       <Properties>
         <Property name="text" type="java.lang.String" value="3"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn3ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn4">
       <Properties>
         <Property name="text" type="java.lang.String" value="4"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn4ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn5">
       <Properties>
         <Property name="text" type="java.lang.String" value="5"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn5ActionPerformed"/>
