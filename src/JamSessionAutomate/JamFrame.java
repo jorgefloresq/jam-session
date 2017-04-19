@@ -162,6 +162,16 @@ public class JamFrame extends javax.swing.JFrame {
 
         rbDrums.setSelected(true);
         rbDrums.setText("Drums");
+        rbDrums.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                rbDrumsStateChanged(evt);
+            }
+        });
+        rbDrums.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbDrumsActionPerformed(evt);
+            }
+        });
 
         rbBass.setText("Bass");
         rbBass.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -577,6 +587,14 @@ public class JamFrame extends javax.swing.JFrame {
         keysTrack.updatePath(Backend.getChordPath("keyz",(String)cmbbxKeys.getSelectedItem(),
                              (String)cmbChord3.getSelectedItem()));
     }//GEN-LAST:event_btn3ActionPerformed
+
+    private void rbDrumsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbDrumsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbDrumsActionPerformed
+
+    private void rbDrumsStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_rbDrumsStateChanged
+        refreshSequence();
+    }//GEN-LAST:event_rbDrumsStateChanged
 
     /**
      * @param args the command line arguments
