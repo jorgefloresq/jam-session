@@ -458,7 +458,7 @@ public class JamFrame extends javax.swing.JFrame {
             ClipSequencer.started = true;
             
             ClipSequencer.updateSequence(chkbxsSelected);
-            timer.schedule(new ClipSequencer(tracks),0,drumTrack.getClipDuration());
+            timer.schedule(new ClipSequencer(tracks,drumTrack.getClipDuration()-120),0,drumTrack.getClipDuration()-120);
         }
         else{
             cmbChord1.setEnabled(true);

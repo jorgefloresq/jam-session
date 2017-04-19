@@ -14,6 +14,7 @@ package JamSessionAutomate;
 import java.util.*;
 import java.io.*;
 import javax.sound.sampled.*;
+import java.util.concurrent.TimeUnit;
 
 public class ClipSequencer extends TimerTask {
     public static Boolean started = false;
@@ -22,9 +23,11 @@ public class ClipSequencer extends TimerTask {
     private static ArrayList<InstrumentTrack> tracks;
     private static int count = 0;
     private static int counter = 0;
+    private int wait;
     
-    public  ClipSequencer(ArrayList<InstrumentTrack> tracks){
+    public  ClipSequencer(ArrayList<InstrumentTrack> tracks, Integer wait){
         this.tracks = tracks;
+        this.wait = wait;
         
     }
     
@@ -39,12 +42,15 @@ public class ClipSequencer extends TimerTask {
                 //System.out.println(tracks.get(i).getPath());
                 tracks.get(i).stop();
                 tracks.get(i).play();
-                
-              //  if(tracks.get(i).getInstrument().equals("drums")){
-               //     evaluateDrumPath(tracks.get(i));
-                //}
             }
         }
+        try{
+            Thread.sleep(wait);
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+            stopAllClips();
     }
     
     public static void stopAllClips(){
