@@ -33,6 +33,7 @@ public class UploadInstrument extends javax.swing.JFrame {
      */
     public UploadInstrument() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -530,6 +531,11 @@ public class UploadInstrument extends javax.swing.JFrame {
         });
 
         btnCancel.setText("Cancel");
+        btnCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Variation name:");
 
@@ -751,6 +757,11 @@ public class UploadInstrument extends javax.swing.JFrame {
             System.out.println("Missing Files");
         }
     }//GEN-LAST:event_btnSaveActionPerformed
+
+    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        this.setVisible(false);
+        new MenuFrame().setVisible(true);
+    }//GEN-LAST:event_btnCancelActionPerformed
 
     /**
      * @param args the command line arguments

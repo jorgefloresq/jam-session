@@ -50,9 +50,9 @@ public class InstrumentTrack {
     }
     
     public void play(){
-        
-        System.out.println("is running: "+clip.isRunning());
+        clip.flush();
         clip.start();
+        System.out.println("is running: "+clip.isRunning());
         
         //System.out.println("clipstart");
         
