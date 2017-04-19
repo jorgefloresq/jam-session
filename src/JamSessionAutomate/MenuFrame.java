@@ -1,5 +1,7 @@
 package JamSessionAutomate;
 
+import javax.swing.JFrame;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,6 +19,7 @@ public class MenuFrame extends javax.swing.JFrame {
      */
     public MenuFrame() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -29,20 +32,36 @@ public class MenuFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnUploadVariation = new javax.swing.JButton();
         btnJam = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnAddBeat = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(0, 0));
 
         jLabel1.setText("Menu");
 
-        jButton1.setText("Add Instrument Variation");
+        btnUploadVariation.setText("Add Instrument Variation");
+        btnUploadVariation.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUploadVariationActionPerformed(evt);
+            }
+        });
 
         btnJam.setText("JAM");
+        btnJam.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJamActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Add Beat");
+        btnAddBeat.setText("Add Beat");
+        btnAddBeat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddBeatActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Delete Beat or Instrument");
 
@@ -56,7 +75,7 @@ public class MenuFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(jButton1))
+                                .addComponent(btnUploadVariation))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(70, 70, 70)
                                 .addComponent(jLabel1)))
@@ -64,7 +83,7 @@ public class MenuFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnAddBeat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnJam, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
@@ -77,9 +96,9 @@ public class MenuFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnJam)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(btnUploadVariation)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(btnAddBeat)
                 .addGap(26, 26, 26)
                 .addComponent(jButton3)
                 .addContainerGap(25, Short.MAX_VALUE))
@@ -87,6 +106,21 @@ public class MenuFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnJamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJamActionPerformed
+        this.setVisible(false);
+        new JamFrame().setVisible(true);
+    }//GEN-LAST:event_btnJamActionPerformed
+
+    private void btnUploadVariationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUploadVariationActionPerformed
+        this.setVisible(false);
+        new UploadInstrument().setVisible(true);
+    }//GEN-LAST:event_btnUploadVariationActionPerformed
+
+    private void btnAddBeatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddBeatActionPerformed
+        this.setVisible(false);
+        new UploadBeat().setVisible(true);
+    }//GEN-LAST:event_btnAddBeatActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,9 +158,9 @@ public class MenuFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAddBeat;
     private javax.swing.JButton btnJam;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnUploadVariation;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables

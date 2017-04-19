@@ -16,6 +16,7 @@ public class UploadBeat extends javax.swing.JFrame {
      */
     public UploadBeat() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -36,8 +37,8 @@ public class UploadBeat extends javax.swing.JFrame {
         lblStart = new javax.swing.JLabel();
         lblLoop = new javax.swing.JLabel();
         lblStop = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnSave = new javax.swing.JButton();
+        btnCancel = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -60,9 +61,14 @@ public class UploadBeat extends javax.swing.JFrame {
         lblStop.setForeground(new java.awt.Color(255, 0, 0));
         lblStop.setText("No File Chosen.");
 
-        jButton1.setText("Save");
+        btnSave.setText("Save");
 
-        jButton2.setText("Cancel");
+        btnCancel.setText("Cancel");
+        btnCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -98,9 +104,9 @@ public class UploadBeat extends javax.swing.JFrame {
                                 .addComponent(lblStop))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(46, 46, 46)
-                        .addComponent(jButton1)
+                        .addComponent(btnSave)
                         .addGap(34, 34, 34)
-                        .addComponent(jButton2)))
+                        .addComponent(btnCancel)))
                 .addGap(34, 34, 34))
         );
         layout.setVerticalGroup(
@@ -126,13 +132,18 @@ public class UploadBeat extends javax.swing.JFrame {
                     .addComponent(lblStop))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(btnSave)
+                    .addComponent(btnCancel))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        this.setVisible(false);
+        new MenuFrame().setVisible(true);
+    }//GEN-LAST:event_btnCancelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,11 +181,11 @@ public class UploadBeat extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCancel;
     private javax.swing.JButton btnLoop;
+    private javax.swing.JButton btnSave;
     private javax.swing.JButton btnStart;
     private javax.swing.JButton btnStop;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblLoop;
