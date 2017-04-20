@@ -711,6 +711,11 @@ public class UploadInstrument extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBminActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        Backend.connectDB();
+        Backend.verifyFilesExist("drums");
+        Backend.verifyFilesExist("bass");
+        Backend.verifyFilesExist("guitar");
+        Backend.verifyFilesExist("keyz");
         
         for(String s : chords){
             map.put(s,null);
