@@ -35,7 +35,7 @@ public class MenuFrame extends javax.swing.JFrame {
         btnUploadVariation = new javax.swing.JButton();
         btnJam = new javax.swing.JButton();
         btnAddBeat = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnRemoveInstrument = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(0, 0));
@@ -63,7 +63,12 @@ public class MenuFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Delete Beat or Instrument");
+        btnRemoveInstrument.setText("Delete Beat or Instrument");
+        btnRemoveInstrument.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoveInstrumentActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -85,7 +90,7 @@ public class MenuFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnAddBeat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnJam, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(btnRemoveInstrument, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -100,7 +105,7 @@ public class MenuFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnAddBeat)
                 .addGap(26, 26, 26)
-                .addComponent(jButton3)
+                .addComponent(btnRemoveInstrument)
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
@@ -121,6 +126,11 @@ public class MenuFrame extends javax.swing.JFrame {
         this.setVisible(false);
         new UploadBeat().setVisible(true);
     }//GEN-LAST:event_btnAddBeatActionPerformed
+
+    private void btnRemoveInstrumentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveInstrumentActionPerformed
+        this.setVisible(false);
+        new RemoveInstrumentFrame().setVisible(true);
+    }//GEN-LAST:event_btnRemoveInstrumentActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,8 +170,8 @@ public class MenuFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddBeat;
     private javax.swing.JButton btnJam;
+    private javax.swing.JButton btnRemoveInstrument;
     private javax.swing.JButton btnUploadVariation;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

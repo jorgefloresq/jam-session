@@ -1,6 +1,7 @@
 package JamSessionAutomate;
 
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -90,7 +91,24 @@ public class Backend {
         
         return path;
     }
-    
+    public static void verifyFilesExist(String inst){ 
+        try{
+            statement.executeUpdate("USE musicloops;");
+        
+            String query = "SELECT * FROM "+inst+"";
+        
+            ResultSet rs = statement.executeQuery(query); 
+            while(rs.next()){
+                File fl = new File(rs.getString("path"));
+                if(!fl.exists()){
+                   System.out.println(rs.getString("path")+ " was not found!");
+                }
+            }
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
     public static void addChordToDb(String inst,String path,String var,String chord){
         
         try{
@@ -101,6 +119,19 @@ public class Backend {
         statement.executeUpdate(query); 
         }
         
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
+    
+    public static void removeVariation(String table, String variation){
+        try{
+            statement.executeUpdate("USE musicloops;");
+            String query = "DELETE from "+table+" where type = '"+variation+"';";
+            statement.executeUpdate(query); 
+            
+            System.out.println("Deleted "+variation+" succesfully!");
+        }
         catch(SQLException e){
             e.printStackTrace();
         }
