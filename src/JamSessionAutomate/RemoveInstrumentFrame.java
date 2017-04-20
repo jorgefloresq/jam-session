@@ -59,6 +59,11 @@ public class RemoveInstrumentFrame extends javax.swing.JFrame {
         jLabel3.setText("Variation");
 
         btnRemove.setText("REMOVE");
+        btnRemove.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoveActionPerformed(evt);
+            }
+        });
 
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -140,6 +145,12 @@ public class RemoveInstrumentFrame extends javax.swing.JFrame {
         this.setVisible(false);
         new MenuFrame().setVisible(true);
     }//GEN-LAST:event_btnBackActionPerformed
+
+    private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
+        Backend.connectDB();
+        Backend.removeVariation((String)cmbbxInstrument.getSelectedItem(),(String)cmbbxVariation.getSelectedItem());
+        
+    }//GEN-LAST:event_btnRemoveActionPerformed
 
     /**
      * @param args the command line arguments
