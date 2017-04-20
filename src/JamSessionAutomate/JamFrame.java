@@ -650,7 +650,8 @@ public class JamFrame extends javax.swing.JFrame {
             }
         });
     }
-    private static void addDirectories(File file, JComboBox j){
+    public static void addDirectories(File file, JComboBox j){
+        j.removeAllItems();
         for(String s:file.list()){
             j.addItem(s);
         }
