@@ -124,5 +124,18 @@ public class Backend {
         }
     }
     
+    public static void removeVariation(String table, String variation){
+        try{
+            statement.executeUpdate("USE musicloops;");
+            String query = "DELETE from "+table+" where type = '"+variation+"';";
+            statement.executeUpdate(query); 
+            
+            System.out.println("Deleted "+variation+" succesfully!");
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
+    
     
 }
