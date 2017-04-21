@@ -5,12 +5,26 @@
  */
 package JamSessionAutomate;
 
+import java.awt.Color;
+import java.io.File;
+import java.net.URI;
+import java.util.HashMap;
+import javax.swing.JFileChooser;
+import javax.swing.*;
+import java.util.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+
 /**
  *
  * @author jcontreras
  */
 public class UploadBeat extends javax.swing.JFrame {
-
+    private String[] orders = {"start","loop","stop"};
+    private HashMap<String, String> map = new HashMap<String, String>();
+    private String p;
     /**
      * Creates new form UploadBeat
      */
@@ -47,10 +61,25 @@ public class UploadBeat extends javax.swing.JFrame {
         jLabel2.setText("Variation Name:");
 
         btnStart.setText("Start");
+        btnStart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStartActionPerformed(evt);
+            }
+        });
 
         btnLoop.setText("Loop");
+        btnLoop.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoopActionPerformed(evt);
+            }
+        });
 
         btnStop.setText("Stop");
+        btnStop.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStopActionPerformed(evt);
+            }
+        });
 
         lblStart.setForeground(new java.awt.Color(255, 0, 0));
         lblStart.setText("No File Chosen.");
@@ -62,6 +91,11 @@ public class UploadBeat extends javax.swing.JFrame {
         lblStop.setText("No File Chosen.");
 
         btnSave.setText("Save");
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
+            }
+        });
 
         btnCancel.setText("Cancel");
         btnCancel.addActionListener(new java.awt.event.ActionListener() {
@@ -145,6 +179,58 @@ public class UploadBeat extends javax.swing.JFrame {
         new MenuFrame().setVisible(true);
     }//GEN-LAST:event_btnCancelActionPerformed
 
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+        Backend.connectDB();
+        
+        String fileName;
+        File sourceFile;
+        Path sourcePath;
+        File destinationDirectory;
+        File destinationFile;
+        if(!map.containsValue(null)&& !txtVariation.getText().equals("")){
+            
+            destinationDirectory = new File("Audio/drums/"+txtVariation.getText());
+            destinationDirectory.mkdirs();
+            
+            for(String order: orders){
+                
+                
+                fileName = txtVariation.getText()+"_"+order;
+                p = "Audio/drums/"+txtVariation.getText()+"/"+fileName+".wav";
+                Backend.addBeatToDb(0,p,txtVariation.getText(),order);
+                sourceFile = new File(map.get(order));
+                sourcePath = sourceFile.toPath();
+                destinationFile = new File(p);
+                try{
+                    Files.copy(sourcePath, destinationFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                }
+                catch(Exception e){
+                    System.out.println("Unable to copy");
+                }
+                //cmbbxInstrumentType.getSelectedItem().toString()
+            }
+            System.out.println("Success");
+        }
+        else{
+            System.out.println("Missing Files");
+        }
+    }//GEN-LAST:event_btnSaveActionPerformed
+
+    private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
+        map.put("start", openFile(lblStart));
+        System.out.println(map.get("start"));
+    }//GEN-LAST:event_btnStartActionPerformed
+
+    private void btnLoopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoopActionPerformed
+        map.put("loop", openFile(lblLoop));
+        System.out.println(map.get("loop"));
+    }//GEN-LAST:event_btnLoopActionPerformed
+
+    private void btnStopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStopActionPerformed
+        map.put("stop", openFile(lblStop));
+        System.out.println(map.get("stop"));
+    }//GEN-LAST:event_btnStopActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -178,6 +264,23 @@ public class UploadBeat extends javax.swing.JFrame {
                 new UploadBeat().setVisible(true);
             }
         });
+    }
+    
+    private String openFile(JLabel lbl){
+        //JButton open = new JButton();
+        JFileChooser jfc = new JFileChooser("E:\\Samples\\piano"); 
+        //makes the open action do something??
+        if(jfc.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) { 
+            lbl.setText(jfc.getSelectedFile().getName());
+            lbl.setForeground(new Color(51,204,51));
+            return jfc.getSelectedFile().getAbsolutePath();    
+        }
+        else if(lbl.getText().equals("No File Chosen.")){
+            return null;
+        }
+        else{
+            return lbl.getText();
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

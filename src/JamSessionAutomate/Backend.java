@@ -124,6 +124,21 @@ public class Backend {
         }
     }
     
+    public static void addBeatToDb(Integer dur, String path,String var,String order){
+        
+        try{
+        statement.executeUpdate("USE musicloops;");
+        
+        String query = "insert into drums values  ('"+dur+"', '"+path+"', '"+var+"','"+order+"')";
+        
+        statement.executeUpdate(query); 
+        }
+        
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
+    
     public static void removeVariation(String table, String variation){
         try{
             statement.executeUpdate("USE musicloops;");
