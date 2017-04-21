@@ -123,16 +123,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Start"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnStartActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnLoop">
       <Properties>
         <Property name="text" type="java.lang.String" value="Loop"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLoopActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnStop">
       <Properties>
         <Property name="text" type="java.lang.String" value="Stop"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnStopActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblStart">
       <Properties>
@@ -162,6 +171,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Save"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnCancel">
       <Properties>

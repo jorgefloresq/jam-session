@@ -26,6 +26,7 @@ public class UploadInstrument extends javax.swing.JFrame {
     private String[] chords = {"C Major","C# Major","D Major","D# Major","E Major","F Major","F# Major","G Major","G# Major","A Major","A# Major","B Major",
         "C Minor","C# Minor","D Minor","D# Minor","E Minor","F Minor","F# Minor","G Minor","G# Minor","A Minor","A# Minor","B Minor"};
     private HashMap<String, String> map = new HashMap<String, String>();
+    //String of path that will be added to DB.
     private String p;
 
     /**
