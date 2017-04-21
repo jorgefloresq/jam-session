@@ -149,6 +149,8 @@ public class RemoveInstrumentFrame extends javax.swing.JFrame {
     private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
         Backend.connectDB();
         Backend.removeVariation((String)cmbbxInstrument.getSelectedItem(),(String)cmbbxVariation.getSelectedItem());
+        File dir = new File("Audio/"+(String)cmbbxInstrument.getSelectedItem()+"/"+(String)cmbbxVariation.getSelectedItem()+"");
+        removeDirectoryAndContent(dir);
         
     }//GEN-LAST:event_btnRemoveActionPerformed
 
@@ -186,6 +188,17 @@ public class RemoveInstrumentFrame extends javax.swing.JFrame {
                 new RemoveInstrumentFrame().setVisible(true);
             }
         });
+    }
+    
+    private static void removeDirectoryAndContent(File dir){
+        
+        for (File file: dir.listFiles()) {
+            if (file.isDirectory()) {
+                removeDirectoryAndContent(file);
+            }
+            file.delete();
+        }
+        dir.delete();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
