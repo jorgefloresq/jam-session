@@ -364,14 +364,14 @@
                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="lblDrumsGif1" min="-2" pref="109" max="-2" attributes="0"/>
+                          <Component id="lblDrumsGif" min="-2" pref="109" max="-2" attributes="0"/>
                           <EmptySpace pref="82" max="32767" attributes="0"/>
-                          <Component id="lblBassGif2" min="-2" pref="109" max="-2" attributes="0"/>
+                          <Component id="lblBassGif" min="-2" pref="109" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="lblGuitarGif" min="-2" pref="109" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="lblKeysGif3" min="-2" pref="109" max="-2" attributes="0"/>
+                          <Component id="lblKeysGif" min="-2" pref="109" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
@@ -413,8 +413,8 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblDrumsGif1" min="-2" pref="109" max="-2" attributes="0"/>
-                      <Component id="lblBassGif2" min="-2" pref="109" max="-2" attributes="0"/>
+                      <Component id="lblDrumsGif" min="-2" pref="109" max="-2" attributes="0"/>
+                      <Component id="lblBassGif" min="-2" pref="109" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -429,7 +429,7 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="lblGuitarGif" min="-2" pref="109" max="-2" attributes="0"/>
-                      <Component id="lblKeysGif3" min="-2" pref="109" max="-2" attributes="0"/>
+                      <Component id="lblKeysGif" min="-2" pref="109" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -498,7 +498,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblDrumsGif1">
+        <Component class="javax.swing.JLabel" name="lblDrumsGif">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -516,7 +516,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblBassGif2">
+        <Component class="javax.swing.JLabel" name="lblBassGif">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -534,7 +534,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblKeysGif3">
+        <Component class="javax.swing.JLabel" name="lblKeysGif">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>

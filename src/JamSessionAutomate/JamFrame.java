@@ -1,15 +1,6 @@
 package JamSessionAutomate;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author jcontreras
- */
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Image;
@@ -26,11 +17,13 @@ import javax.swing.JRadioButton;
 
 public class JamFrame extends javax.swing.JFrame {
     //Timer is assigned and selected every time you press play
-    Timer timer;
+    private Timer timer;
     //Creates a list of booleans that represent which instrumentTracks will be playing
-    ArrayList<Boolean> chkbxsSelected = new ArrayList<Boolean>();
-    ArrayList<JRadioButton> rbs = new ArrayList<JRadioButton>();
-    ArrayList<InstrumentTrack> tracks = new ArrayList<InstrumentTrack>();
+    private ArrayList<Boolean> chkbxsSelected = new ArrayList<Boolean>();
+    private ArrayList<JRadioButton> rbs = new ArrayList<JRadioButton>();
+    private ArrayList<InstrumentTrack> tracks = new ArrayList<InstrumentTrack>();
+    private ArrayList<JLabel> labels = new ArrayList<JLabel>();
+    private ArrayList<ImageIcon> icons = new ArrayList<ImageIcon>();
     
     String chord1;
     String chord2;
@@ -44,14 +37,9 @@ public class JamFrame extends javax.swing.JFrame {
     InstrumentTrack keysTrack;
     
    
-    
-    /**
-     * Creates new form JamFrame
-     */
     public JamFrame() {
         initComponents();
         this.setLocationRelativeTo(null);
-        //this.getContentPane().setBackground(new Color(255,128,0));
     }
 
     /**r
@@ -77,11 +65,11 @@ public class JamFrame extends javax.swing.JFrame {
         rbKeys = new javax.swing.JRadioButton();
         lblGuitarGif = new javax.swing.JLabel();
         cmbbxDrums = new javax.swing.JComboBox<>();
-        lblDrumsGif1 = new javax.swing.JLabel();
+        lblDrumsGif = new javax.swing.JLabel();
         cmbbxGuitar = new javax.swing.JComboBox<>();
-        lblBassGif2 = new javax.swing.JLabel();
+        lblBassGif = new javax.swing.JLabel();
         cmbbxBass = new javax.swing.JComboBox<>();
-        lblKeysGif3 = new javax.swing.JLabel();
+        lblKeysGif = new javax.swing.JLabel();
         cmbbxKeys = new javax.swing.JComboBox<>();
         tglPlay = new javax.swing.JToggleButton();
         btn1 = new javax.swing.JButton();
@@ -228,14 +216,14 @@ public class JamFrame extends javax.swing.JFrame {
             }
         });
 
-        lblDrumsGif1.setBackground(new java.awt.Color(0, 0, 0));
-        lblDrumsGif1.setOpaque(true);
+        lblDrumsGif.setBackground(new java.awt.Color(0, 0, 0));
+        lblDrumsGif.setOpaque(true);
 
-        lblBassGif2.setBackground(new java.awt.Color(0, 0, 0));
-        lblBassGif2.setOpaque(true);
+        lblBassGif.setBackground(new java.awt.Color(0, 0, 0));
+        lblBassGif.setOpaque(true);
 
-        lblKeysGif3.setBackground(new java.awt.Color(0, 0, 0));
-        lblKeysGif3.setOpaque(true);
+        lblKeysGif.setBackground(new java.awt.Color(0, 0, 0));
+        lblKeysGif.setOpaque(true);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -251,13 +239,13 @@ public class JamFrame extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(lblDrumsGif1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblDrumsGif, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
-                        .addComponent(lblBassGif2, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblBassGif, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(lblGuitarGif, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblKeysGif3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblKeysGif, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -289,8 +277,8 @@ public class JamFrame extends javax.swing.JFrame {
                     .addComponent(rbBass))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblDrumsGif1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblBassGif2, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblDrumsGif, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblBassGif, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cmbbxDrums, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -302,7 +290,7 @@ public class JamFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblGuitarGif, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblKeysGif3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblKeysGif, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(cmbbxBass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -428,10 +416,25 @@ public class JamFrame extends javax.swing.JFrame {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         Backend.connectDB();
         try{
-        URL url = new URL("file:Gifs/drums.gif");
-        ImageIcon icon = new ImageIcon(url);
-        icon.setImage(icon.getImage().getScaledInstance(lblDrumsGif1.getWidth() ,lblDrumsGif1.getHeight(), Image.SCALE_DEFAULT));
-        lblDrumsGif1.setIcon(icon);
+        URL urlDrums = new URL("file:Gifs/drums.gif");
+        URL urlBass = new URL("file:Gifs/bass.gif");
+        URL urlGuitar = new URL("file:Gifs/guitar.gif");
+        URL urlKeyz = new URL("file:Gifs/keyz.gif");
+        
+        ImageIcon iconDrums = new ImageIcon(urlDrums);
+        iconDrums.setDescription("This is a drums icon");
+        ImageIcon iconBass = new ImageIcon(urlBass);
+        iconBass.setDescription("This is a Bass icon");
+        ImageIcon iconGuitar = new ImageIcon(urlGuitar);
+        iconGuitar.setDescription("This is a Guitar icon");
+        ImageIcon iconKeyz = new ImageIcon(urlKeyz);
+        iconKeyz.setDescription("This is a Keyz icon");
+        
+        icons.add(iconDrums);
+        icons.add(iconBass);
+        icons.add(iconGuitar);
+        icons.add(iconKeyz);
+        
         
         }
         catch(Exception e){
@@ -468,6 +471,12 @@ public class JamFrame extends javax.swing.JFrame {
                             ,(String)cmbbxKeys.getSelectedItem(),(String)cmbChord1.getSelectedItem());
             
             System.out.println(drumTrack.getClipDuration());
+            
+            labels.add(lblDrumsGif);
+            labels.add(lblBassGif);
+            labels.add(lblGuitarGif);
+            labels.add(lblKeysGif);
+            
 
         
         
@@ -479,7 +488,7 @@ public class JamFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbChord2ActionPerformed
 
     private void tglPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tglPlayActionPerformed
-
+        
         if(!ClipSequencer.started){
             cmbChord1.setEnabled(false);
             cmbChord2.setEnabled(false);
@@ -524,6 +533,8 @@ public class JamFrame extends javax.swing.JFrame {
             tracks.add(keysTrack);
             
             
+            
+            
             //Add values to radiobutton boolean arraylist(not considering
             //additional radiobuttons added)\
              refreshSequence();
@@ -534,7 +545,7 @@ public class JamFrame extends javax.swing.JFrame {
             ClipSequencer.started = true;
             
             ClipSequencer.updateSequence(chkbxsSelected);
-            timer.schedule(new ClipSequencer(tracks,drumTrack.getClipDuration()-120),0,drumTrack.getClipDuration()-120);
+            timer.schedule(new ClipSequencer(labels,icons,tracks,drumTrack.getClipDuration()-120),0,drumTrack.getClipDuration()-120);
         }
         else{
             cmbChord1.setEnabled(true);
@@ -738,10 +749,10 @@ public class JamFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel lblBassGif2;
-    private javax.swing.JLabel lblDrumsGif1;
+    private javax.swing.JLabel lblBassGif;
+    private javax.swing.JLabel lblDrumsGif;
     private javax.swing.JLabel lblGuitarGif;
-    private javax.swing.JLabel lblKeysGif3;
+    private javax.swing.JLabel lblKeysGif;
     private javax.swing.JRadioButton rbBass;
     private javax.swing.JRadioButton rbDrums;
     private javax.swing.JRadioButton rbGuitar;
